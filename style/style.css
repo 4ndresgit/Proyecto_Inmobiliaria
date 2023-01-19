@@ -8,7 +8,7 @@ body {
   font-family: work sans, sans-serif;
 }
 
-/*------Logo-Navbar-Social------*/
+/*----------HEADER (Logo-Navbar-Social)----------*/
 
 header {
   background-color: #ffffff;
@@ -94,30 +94,7 @@ img {
   list-style-type: none;
 }
 
-/*
-@media screen and (max-width: 992px) {
-   .navbar-container {
-    width: 940px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-@media screen and (max-width: 768px) {
-   .navbar-container {
-    width: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-
-    display: block !important;
-    height: auto !important;
-    overflow: visible !important;
-}
-}*/
-
-/*------search nav---------*/
-
+/*---------------NAV SEARCH------------*/
 
 .search {
   width: 100%;
@@ -134,7 +111,7 @@ img {
   padding-right: 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-family: work sans, sans-serif;
   color: #ffffff;
 }
@@ -160,7 +137,7 @@ img {
   background-color: black;
 }
 
-/*-----home -----*/
+/*-------------- HOME ---------------*/
 
 .section-slider {
   height: 930px;
@@ -209,7 +186,8 @@ img {
 .card {
   height: 390px;
   width: 280px;
-  background-color: #eee;
+  background-color: #e2e2e2;
+  border: solid 1px #f2f2f2;
   padding: 10px;
   margin: 5px;
 
@@ -220,28 +198,24 @@ img {
   box-shadow: 1px 10px 10px 1px rgb(0 0 0 / 40%);
 }
 .card__image {
-  width: 280px;
-  height: 200px;
-
-  display: flex;
-  align-items: center;
+  width: 260px;
+  height: 100%;
 }
 .card__image img {
-  height: 190px;
+  height: 100%;
   width: 100%;
 }
 .card__text {
-  height: 180px;
+  height: 160px;
   display: flex;
   flex-direction: column;
 }
 .card span {
-  width: 260px;
+  width: 100%;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 8px;
-  margin-bottom: 4px;
 }
 .card h2 {
   font-size: 15px;
@@ -250,18 +224,18 @@ img {
   line-height: 18px;
   margin-top: 0px;
   margin-bottom: 5px;
-  height: 35px;
 }
 .card ul {
-  height: 33px;
+  height: 50px;
   font-size: 12px;
   color: #808080;
   line-height: 16px;
   letter-spacing: -0.4px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .card li {
   list-style-type: none;
@@ -269,9 +243,10 @@ img {
 }
 .card__text ul {
   display: flex;
+  justify-content: flex-start;
 }
 .card p {
-  width: 150px;
+  width: 280px;
   font-size: 20px;
   font-weight: 500;
   color: #383838;
@@ -279,6 +254,7 @@ img {
   padding-bottom: 20px;
   margin-bottom: 20px;
   line-height: 40px;
+  text-align: left;
 }
 .card button {
   color: #ffffff;
@@ -352,6 +328,14 @@ span {
   .social {
     padding-right: 140px;
   }
+  .search-container {
+  width: 970px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .search-btn {
+    width: 100px;
+  }
   .propiedades__title {
     width: 970px;
   }
@@ -373,31 +357,33 @@ span {
   }
   .card span {
     margin-top: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .card h2 {
+    margin-bottom: 15px;
   }
   .card__text ul {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
   }
   .card p {
-    height: 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #383838;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     line-height: 40px;
   }
   .card button {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 0px;
     padding: 5px 5px;
     font-size: 14px;
   }
 }
-/*---------nosotros--------*/
+/*---------- NOSOTROS ----------*/
 
 .superior-nosotros {
   height: 183px;
@@ -489,7 +475,9 @@ span {
   width: 555px;
   height: 680px;
 }
-/*---------Propiedades------*/
+
+/*---------- PROPIEDADES ----------*/
+
 .inferior {
   width: 1170px;
   height: 1700px;
@@ -511,8 +499,9 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-}
-/*---------Pedidos---------*/
+} 
+
+/*---------- PEDIDOS ----------*/
 
 .pedidos-container {
   height: 183.33px;
@@ -546,7 +535,8 @@ span {
   margin-left: 50px;
   border-left: solid 3px #437f86;
 }
-/*---------Contacto--------*/
+
+/*---------- CONTACTO ----------*/
 
 .contacto-container {
   height: 183.33px;
@@ -656,12 +646,13 @@ span {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/*--------footer----------*/
+
+/*-------- FOOTER----------*/
 
 footer {
   height: auto;
   background-repeat: repeat-x;
-  background-color: #e3e3e3;
+  background-color: #e2e2e2;
   background-position: left top;
   padding-top: 70px;
   padding-bottom: 70px;
