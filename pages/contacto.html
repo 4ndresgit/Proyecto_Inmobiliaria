@@ -28,6 +28,41 @@
   <body>
     <header>
       <div class="navbar-container">
+        <div class="responsive-navbar">
+          <button
+            class="btn btn-success acomodar"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#id_igual"
+          >
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </button>
+          <nav class="offcanvas offcanvas-start" id="id_igual">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title">
+                <button class="btn btn-danger" data-bs-dismiss="offcanvas">
+                  <i class="fa-solid fa-x fa-1x"></i>
+                </button>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="contenedor_logo">
+                <img
+                  width="100px"
+                  height="100px"
+                  src="./img/logo.png"
+                  alt="Logo"
+                />
+              </div>
+              <ul class="navegacion">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/sobrenosotros.html">Nosotros</a></li>
+                <li><a href="./pages/propiedades.html">Propiedades</a></li>
+                <li><a href="./pages/pedidos.html">Pedidos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <a href="../index.html"
           ><img src="../img/logo.png" alt="logo Inmobiliaria"
         /></a>
@@ -71,16 +106,16 @@
       </div>
     </header>
     <main>
-      <!--search nav-->
-
+      
+      <!-- NAVBAR SEARCH -->
       <section class="search">
         <div class="search-container">
           <h3 class="search-title">¿Qué estás buscando?</h3>
           <form action="archivo.php" search__form>
-            <label for="">Tipo de operacion</label>
-            <input type="text" />
-            <label for="">Tipo de propiedad</label>
-            <input type="text" />
+            <label for="Tipo de operacion"></label>
+            <input type="text" placeholder="Tipo de operacion" />
+            <label for="Tipo de propiedad"></label>
+            <input type="text" placeholder="Tipo de propiedad" />
           </form>
           <button class="search-btn">Buscar</button>
         </div>

@@ -35,6 +35,41 @@
   <body>
     <header>
       <div class="navbar-container">
+        <div class="responsive-navbar">
+          <button
+            class="btn btn-success acomodar"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#id_igual"
+          >
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </button>
+          <nav class="offcanvas offcanvas-start" id="id_igual">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title">
+                <button class="btn btn-danger" data-bs-dismiss="offcanvas">
+                  <i class="fa-solid fa-x fa-1x"></i>
+                </button>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="contenedor_logo">
+                <img
+                  width="100px"
+                  height="100px"
+                  src="./img/logo.png"
+                  alt="Logo"
+                />
+              </div>
+              <ul class="navegacion">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/sobrenosotros.html">Nosotros</a></li>
+                <li><a href="./pages/propiedades.html">Propiedades</a></li>
+                <li><a href="./pages/pedidos.html">Pedidos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <a href="./index.html"
           ><img src="./img/logo.png" alt="logo Inmobiliaria"
         /></a>
@@ -175,9 +210,7 @@
           <div class="card">
             <div class="card__image">
               <a href="./pages/propiedades.html"
-                ><img
-                  src="./img/home/image-home2.png"
-                  alt="casa"
+                ><img src="./img/home/image-home2.png" alt="casa"
               /></a>
             </div>
             <div class="card__text">
@@ -202,9 +235,7 @@
           <div class="card">
             <div class="card__image">
               <a href="./pages/propiedades.html"
-                ><img
-                  src="./img/home/image-home3.png"
-                  alt="casa"
+                ><img src="./img/home/image-home3.png" alt="casa"
               /></a>
             </div>
             <div class="card__text">
@@ -229,9 +260,7 @@
           <div class="card">
             <div class="card__image">
               <a href="./pages/propiedades.html"
-                ><img
-                  src="./img/home/image-home4.png"
-                  alt="casa"
+                ><img src="./img/home/image-home4.png" alt="casa"
               /></a>
             </div>
             <div class="card__text">
@@ -256,9 +285,7 @@
           <div class="card">
             <div class="card__image">
               <a href="./pages/propiedades.html"
-                ><img
-                  src="./img/home/image-home5.png"
-                  alt="casa"
+                ><img src="./img/home/image-home5.png" alt="casa"
               /></a>
             </div>
             <div class="card__text">
@@ -283,9 +310,7 @@
           <div class="card">
             <div class="card__image">
               <a href="./pages/propiedades.html"
-                ><img
-                  src="./img/home/image-home6.png"
-                  alt="casa"
+                ><img src="./img/home/image-home6.png" alt="casa"
               /></a>
             </div>
             <div class="card__text">
@@ -310,9 +335,7 @@
           <div class="card">
             <div class="card__image">
               <a href="./pages/propiedades.html"
-                ><img
-                  src="./img/home/image-home7.png"
-                  alt="casa"
+                ><img src="./img/home/image-home7.png" alt="casa"
               /></a>
             </div>
             <div class="card__text">
@@ -337,9 +360,7 @@
           <div class="card">
             <div class="card__image">
               <a href="./pages/propiedades.html"
-                ><img
-                  src="./img/home/image-home8.png"
-                  alt="casa"
+                ><img src="./img/home/image-home8.png" alt="casa"
               /></a>
             </div>
             <div class="card__text">
@@ -366,21 +387,19 @@
 
       <section class="presentacion-container">
         <div class="box-container">
-          <div class="box">
-            <div class="box__content">
-              <h2 class="box__title">
-                Mayra Rigotti Inmobiliaria<span
-                  ><br />¡¡Comenzá tu busqueda hoy!!</span
-                >
-              </h2>
-              <p class="box__text">
-                Desde el comienzo concretando y cumpliendo con las expectativas
-                de nuestros clientes. Encontrá las mejores propiedades del
-                mercado. Encontrá tu lugar para vivir o tu lugar para realizar
-                la mejor inversión resguardando tus ahorros. ¡Bienvenidos a
-                Inmobiliaria Mayra Rigotti!
-              </p>
-            </div>
+          <div class="box__content">
+            <h2 class="box__title">
+              Mayra Rigotti Inmobiliaria<span
+                ><br />¡¡Comenzá tu busqueda hoy!!</span
+              >
+            </h2>
+            <p class="box__text">
+              Desde el comienzo concretando y cumpliendo con las expectativas de
+              nuestros clientes. Encontrá las mejores propiedades del mercado.
+              Encontrá tu lugar para vivir o tu lugar para realizar la mejor
+              inversión resguardando tus ahorros. ¡Bienvenidos a Inmobiliaria
+              Mayra Rigotti!
+            </p>
           </div>
         </div>
       </section>
@@ -436,9 +455,9 @@
             <div class="footer__tasar-info">
               <p>
                 Te asesoramos con respecto al valor real de venta o alquiler de
-                tu inmueble de acueerdo a comparales del mercado.
+                tu inmueble de acuerdo a comparables del mercado.
               </p>
-              <a href="../pages/contacto.html">Contactános.</a>
+              <a href="../pages/contacto.html">Contactanos.</a>
             </div>
           </div>
         </div>

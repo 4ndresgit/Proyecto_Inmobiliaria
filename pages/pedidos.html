@@ -19,6 +19,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!----- CDN BOOTSTRAP ----->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <!----- MI CSS ------>
     <link rel="stylesheet" href="../style/style.css" />
     <title>Pedidos</title>
@@ -26,6 +33,41 @@
   <body>
     <header>
       <div class="navbar-container">
+        <div class="responsive-navbar">
+          <button
+            class="btn btn-success acomodar"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#id_igual"
+          >
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </button>
+          <nav class="offcanvas offcanvas-start" id="id_igual">
+            <div class="offcanvas-header">
+              <div class="offcanvas-title">
+                <button class="btn btn-danger" data-bs-dismiss="offcanvas">
+                  <i class="fa-solid fa-x fa-1x"></i>
+                </button>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="contenedor_logo">
+                <img
+                  width="100px"
+                  height="100px"
+                  src="./img/logo.png"
+                  alt="Logo"
+                />
+              </div>
+              <ul class="navegacion">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/sobrenosotros.html">Nosotros</a></li>
+                <li><a href="./pages/propiedades.html">Propiedades</a></li>
+                <li><a href="./pages/pedidos.html">Pedidos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <a href="./index.html"
           ><img src="../img/logo.png" alt="logo Inmobiliaria"
         /></a>
@@ -75,10 +117,10 @@
         <div class="search-container">
           <h3 class="search-title">¿Qué estás buscando?</h3>
           <form action="archivo.php" search__form>
-            <label for="">Tipo de operacion</label>
-            <input type="text" />
-            <label for="">Tipo de propiedad</label>
-            <input type="text" />
+            <label for="Tipo de operacion"></label>
+            <input type="text" placeholder="Tipo de operacion" />
+            <label for="Tipo de propiedad"></label>
+            <input type="text" placeholder="Tipo de propiedad" />
           </form>
           <button class="search-btn">Buscar</button>
         </div>
@@ -116,21 +158,173 @@
           </div>
         </div>
       </section>
-      <section class="form-container">
-        <div class="form">
-          <form action="">
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
-            <div class="ingreso"></div>
+      <section class="form-pedidos">
+        <div class="form-container">
+          <form
+            role="form"
+            method="POST"
+            class="row"
+            action=""
+            name="newUserForm"
+          >
+            <div class="col-xs-12 padd-bot-top-15">
+              <p class="font-24 bold-700 padd-bot-5">Datos de la propiedad</p>
+              <div class="separator-color-x"></div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <select class="form-control radius-none" name="tipo_operacion">
+                  <option value="">Tipo de operación</option>
+                  <option value="Venta">Venta</option>
+                  <option value="Alquiler">Alquiler</option>
+                  <option value="Alquiler Temporario">
+                    Alquiler Temporario
+                  </option>
+                  <option value="Venta en otra localidad">
+                    Venta en otra localidad
+                  </option>
+                  <option value="Remate">Remate</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <select name="tipo_propiedad" class="form-control radius-none">
+                  <option value="">Tipo de propiedad</option>
+                  <option value="Casas">Casa</option>
+                  <option value="Departamentos">Departamento/Dúplex</option>
+                  <option value="Quintas">Quinta</option>
+                  <option value="Lotes">Lote</option>
+                  <option value="Campos">Campo</option>
+                  <option value="Galpones">Galpón</option>
+                  <option value="Locales">Local/Oficina</option>
+                  <option value="Cabanias">Cabañas/Hoteles/Otros</option>
+                  <option value="Fondos">Fondo de comercio</option>
+                  <option value="Cocheras">Cocheras</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <select name="ambientes" class="form-control radius-none">
+                  <option value="">Nº de ambientes</option>
+                  <option value="1">1 ambiente</option>
+                  <option value="2">2 ambientes</option>
+                  <option value="3">3 ambientes</option>
+                  <option value="4">4 ambientes</option>
+                  <option value="5">5 ambientes</option>
+                  <option value="6">6 ambientes</option>
+                  <option value="7">7 ambientes</option>
+                  <option value="8">8 ambientes</option>
+                  <option value="9">9 ambientes</option>
+                  <option value="10">10 ambientes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control top-buffer-sm radius-none"
+                  placeholder="Localidad"
+                  name="localidad"
+                  autocomplete="off"
+                  required=""
+                />
+              </div>
+              <!-- /.form-group -->
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control top-buffer-sm radius-none"
+                  placeholder="Dirección"
+                  name="direccion"
+                  autocomplete="off"
+                  required=""
+                />
+              </div>
+              <!-- /.form-group -->
+            </div>
+
+            <div class="col-xs-12">
+              <div class="form-group">
+                <textarea
+                  rows="6"
+                  class="form-control top-buffer-sm radius-none"
+                  type="text"
+                  placeholder="Comentarios / Detalle del monto de la operación"
+                  name="comentarios"
+                  autocomplete="off"
+                  required=""
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="col-xs-12 padd-bot-top-15">
+              <p class="font-24 bold-700 padd-bot-5">Datos personales</p>
+              <div class="separator-color-x"></div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control top-buffer-sm radius-none"
+                  placeholder="Nombre y apellido"
+                  name="nombre"
+                  autocomplete="off"
+                  required=""
+                />
+              </div>
+              <!-- /.form-group -->
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control top-buffer-sm radius-none"
+                  placeholder="E-Mail"
+                  name="email"
+                  autocomplete="off"
+                  required=""
+                />
+              </div>
+              <!-- /.form-group -->
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control top-buffer-sm radius-none"
+                  placeholder="Teléfono"
+                  name="telefono"
+                  autocomplete="off"
+                  required=""
+                />
+              </div>
+              <!-- /.form-group -->
+            </div>
+
+            <div class="col-xs-12 padd-bot-top-15">
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-enviar pull-right"
+                  data-pk="80"
+                >
+                  Enviar
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </section>
@@ -204,5 +398,11 @@
         </div>
       </section>
     </footer>
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

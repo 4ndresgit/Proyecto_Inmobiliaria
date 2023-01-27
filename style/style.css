@@ -18,6 +18,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+.responsive-navbar {
+  display: none;
+}
 .navbar-container {
   height: 135px;
   width: 1140px;
@@ -232,7 +235,7 @@ img {
   line-height: 16px;
   letter-spacing: -0.4px;
   margin-bottom: 5px;
-
+  padding-left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -244,6 +247,7 @@ img {
 .card__text ul {
   display: flex;
   justify-content: flex-start;
+  margin-left: 0px;
 }
 .card p {
   width: 280px;
@@ -279,15 +283,15 @@ img {
 .box-container {
   margin: 0 auto;
   width: 1170px;
-  height: 503.98px;
-  padding: 24px 0px;
+  height: 504px;
+  padding: 24px 15px;
 }
-.box {
+/*.box {
   width: 487.5px;
   height: 456px;
   padding: 0px 15px 24px;
-  background-color: #437f86;
-}
+  box-shadow: 6px 6px 25px 0 rgb(0 0 0 / 39%);
+}*/
 .box__content {
   width: 457.5px;
   height: 432px;
@@ -309,10 +313,12 @@ span {
   font-size: 24px;
 }
 .box__text {
-  width: 377.5px;
-  height: 221.79px;
   font-size: 18px;
-  margin: 0px 0px 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.76;
+  margin-bottom: 30px;
   color: #ffffff;
 }
 
@@ -492,14 +498,15 @@ span {
   border-left: solid 3px #437f86;
 }
 .mid-container {
-  width: 100vh;
+  width: 100%;
   height: 546px;
   padding: 24px 0px;
+  place-content: center;
 }
 .mid {
   width: 1170px;
   height: 500px;
-  margin: 0px 15px;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -540,7 +547,7 @@ span {
   text-decoration: none;
   color: #aaaddd;
 }
-.img-container{
+.img-container {
   position: relative;
   width: 585px;
   height: 500px;
@@ -805,6 +812,7 @@ footer {
     padding-right: 140px;
   }
   /* NAVBAR SEARCH */
+
   .search-container {
     width: 970px;
     display: flex;
@@ -862,6 +870,13 @@ footer {
     margin-right: 0px;
     padding: 5px 5px;
     font-size: 14px;
+  }
+  .presentacion-container {
+    height: 551.88px;
+    padding: 24px 0;
+  }
+  .box-container {
+    width: 970px;
   }
   /* NOSOTROS */
   .superior-nosotros {
@@ -967,23 +982,18 @@ footer {
     width: 100%;
     height: 350px;
   }
-  .box {
-    height: 337px;
-  }
   .box-container {
     width: 750px;
-    height: 360px;
-    padding-top: 100px;
+    height: 409px;
+    margin: 0 auto;
+    padding: 24px 15px;
+    overflow: hidden;
   }
   .box__content {
     width: 720px;
     height: 337px;
     margin-top: 30px;
     padding: 70px 40px 20px;
-  }
-  .box__content p {
-    width: 640px;
-    height: 127px;
   }
 
   /* NOSOTROS */
@@ -1018,35 +1028,93 @@ footer {
     margin: 0 auto;
   }
   footer {
-    height: 502px;
+    height: auto;
     padding-top: 70px;
-    padding-bottom: 70px;
   }
   .footer__tasar {
-    padding-top: 15px;
     margin-left: 10px;
   }
   .footer__container {
+    padding-bottom: 70px;
     width: 750px;
-    height: 363px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .footer__logo {
-    width: 750px;
-    height: 150px;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 25px;
+  }
+  .footer__contacto {
+    padding-top: 10px;
   }
   .copyright-container {
     width: 100%;
     margin-top: 50px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
   header {
     width: 100%;
-    height: 54px;
+    height: 60px;
   }
+  .responsive-navbar {
+    display: block;
+  }
+  .btn-success {
+    --bs-btn-bg: #437f86;
+  }
+  .btn {
+    font-size: 0.75rem;
+    color: #437f86;
+    background: #fff;
+    border-color: #fff;
+  }
+  .btn:hover {
+    background: #437f86;
+    color: #fff;
+  }
+  .navegacion{
+    padding: 0 ;
+    display: flex;
+    
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items:center;
+
+    list-style: none;
+    height: 30%;
+}
+.navegacion a{
+    padding: 15px;
+    color: #437f86;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navegacion a:hover {
+  background-color: #437f86;
+  color: #fff;
+}
+.contenedor_logo{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_logo img{
+    border-radius: 50%;
+    width: 250px;
+    height: 150px;
+}
+
+.acomodar{
+    position: relative;
+    top:10px;
+    left: 10px;
+}
   .navbar-container {
     width: 100%;
     padding: 0;
@@ -1069,17 +1137,70 @@ footer {
 
   .propiedades {
     width: 100%;
-    height: 3985px;
+    height: auto;
+    padding: 20px 0px 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .cards {
-    height: 100%;
+    height: auto;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 15px;
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 15px;
+  }
+  .card {
+    width: 380px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    min-height: 1px;
+    margin: 0 auto 20px;
+    padding: 14px 14px 0px;
+  }
+  .card__image {
+    height: 285px;
+    width: 385px;
+    margin: -14px;
+    margin-bottom: 14px;
+  }
+  .card__image img {
+    width: 100%;
+  }
+  .box-container {
+    width: auto;
+    height: auto;
+    padding: 15px 15px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .box__content {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 15px 10px;
+  }
+  .box__title {
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    line-height: 1.44;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .box__text {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.56;
+    font-stretch: normal;
   }
 
   /* NOSOTROS */
@@ -1133,15 +1254,17 @@ footer {
   }
   /* FOOTER */
   footer {
-    height: 628px;
-    width: 767px;
+    height: auto;
+    width: 100%;
   }
   .footer__container {
-    height: 100%;
+    width: auto;
+    height: auto;
     padding: 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
   .footer__logo {
     width: 100%;
@@ -1151,18 +1274,19 @@ footer {
   }
   .footer__contacto {
     width: 100%;
-    height: 147px;
+    height: auto;
     padding: 0 15px;
     margin-bottom: 25px;
   }
   .footer__tasar {
     width: 100%;
-    height: 109px;
+    height: auto;
     margin-left: 0;
+    padding: 0 15px;
   }
-  .footer__tasar-info {
-    padding: 0;
-    width: 100%;
+  .footer__tasar-info p {
+    width: auto;
+    overflow: hidden;
   }
   .copyright {
     height: 113px;
@@ -1180,76 +1304,3 @@ footer {
     margin-top: 15px;
   }
 }
-/* Barra 
-  
-  <button class="btn btn-success acomodar" data-bs-toggle="offcanvas" data-bs-target="#id_igual">
-            <i class="fa-solid fa-bars fa-2x"></i>
-        </button>
-<nav class="offcanvas offcanvas-start" id="id_igual">
-            <div class="offcanvas-header">
-                <div class="offcanvas-title">
-                    <button class="btn btn-danger" data-bs-dismiss="offcanvas">
-                        <i class="fa-solid fa-x fa-1x"></i>
-                    </button>
-                </div>
-            </div>
-<div class="offcanvas-body">
-                <div class="contenedor_logo">
-                    <img width="100px" height="100px" src="https://www.unipile.com/wp-content/uploads/2022/02/icone-logo-whatsapp-vert.png" alt="">
-                </div>
-                <ul class="navegacion">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/seccion2">Seccion2</a></li>
-                    <li><a href="./pages/seccion3">Seccion3</a></li>
-                    <li><a href="./pages/seccion4">Seccion4</a></li>
-                    <li><a href="./pages/seccion5">Seccion5</a></li>
-                </ul>
-            </div>
-        </nav>
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-header{
-    height: 68px;
-}
-
-.navegacion{
-    padding: 0 ;
-    display: flex;
-    
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items:center;
-
-    list-style: none;
-    height: 30%;
-}
-.navegacion a{
-    padding: 15px;
-    
-    text-decoration: none;
-}
-
-.contenedor_logo{
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor_logo img{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-.acomodar{
-    position: relative;
-    top:10px;
-    left: 10px;
-}
-
-.carousel{
-    width: 80%;
-}*/
