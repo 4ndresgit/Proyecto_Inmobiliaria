@@ -1206,9 +1206,10 @@ footer {
   /* NOSOTROS */
   .superior-nosotros {
     width: 100%;
-    height: 236px;
+    height: auto;
   }
   .nosotros {
+    height: auto;
     padding: 25px 15px;
     display: flex;
     flex-wrap: wrap;
@@ -1216,41 +1217,51 @@ footer {
   }
   .inferior-nosotros {
     width: 100%;
-    height: 1400px;
+    height: auto;
+    margin-bottom: 10px;
   }
   .descripcion {
     width: 100%;
-    height: 1400px;
-    margin: 20px auto;
-    padding: 0 15px;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
   .descripcion__box-container {
     width: 100%;
-    height: 608px;
-    padding: 0px 0px 24px;
+    height: auto;
+    padding: 0px 15px 20px;
+    margin: 0 auto;
   }
   .descripcion__box {
     width: 100%;
-    height: 584px;
+    height: auto;
     padding: 30px 15px;
   }
+  
   .descripcion__box h2 {
     font-size: 32px;
     line-height: 1.44;
+    font-weight: 600;
+  }
+  .descripcion__box span {
+    font-size: 24px;
   }
   .descripcion__box p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.56;
+    padding-bottom: 0px;
   }
   .descripcion__img {
     display: block;
-    height: 700px;
+    height: auto;
     width: auto;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 0 15px;
+    margin-top: 24px;
     margin-bottom: 20px;
+  }
+  .descripcion__img img {
+    height: auto;
   }
   /* FOOTER */
   footer {
