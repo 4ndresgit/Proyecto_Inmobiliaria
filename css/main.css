@@ -1,15 +1,16 @@
+/* Reset de css clasico*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   font-family: work sans, sans-serif;
 }
 
 /*----------HEADER (Logo-Navbar-Social)----------*/
-
 header {
   background-color: #ffffff;
   width: 100%;
@@ -18,38 +19,40 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .responsive-navbar {
   display: none;
 }
+
 .navbar-container {
   height: 135px;
   width: 1140px;
   margin: 0 auto;
   padding: 0px 15px;
-
   display: flex;
   justify-content: center;
   justify-content: space-between;
 }
+
 img {
   height: 135px;
   width: 230px;
 }
+
 .links {
   height: 130px;
   width: 707px;
   margin: 0 20px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .navbar-links {
   width: 707px;
   height: 50px;
   margin: 30px 0px 0px;
   padding: 16px 0px 0px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -69,6 +72,7 @@ img {
 .navbar-links li a:hover {
   color: #437f86;
 }
+
 .social {
   width: 203px;
   height: 30px;
@@ -76,20 +80,19 @@ img {
   padding: 10px 0px 0px;
   gap: 20px;
   font-family: work sans, sans sans-serif;
-
   display: flex;
   justify-content: end;
 }
 .social ul li {
   padding: 0px 5px;
 }
-.social li a {
+.social ul li a {
   padding: 15px 15px;
   color: #437f86;
   font-size: 12px;
   opacity: 0.4;
 }
-.social li a:hover {
+.social ul li a:hover {
   opacity: 1;
 }
 .social__links {
@@ -98,7 +101,6 @@ img {
 }
 
 /*----------- NAV SEARCH ------------*/
-
 .search {
   width: 100%;
   height: 93px;
@@ -141,7 +143,6 @@ img {
 }
 
 /*-------------- HOME ---------------*/
-
 .section-slider {
   height: 930px;
   width: 100%;
@@ -150,12 +151,12 @@ img {
   width: 100%;
   height: 934px;
 }
+
 .propiedades {
   height: 934px;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 30px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,6 +170,7 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .title {
   font-size: 26px;
   text-align: center;
@@ -178,14 +180,15 @@ img {
   line-height: 1.1;
   color: #383838;
 }
+
 .cards {
   margin: 0 15px;
   height: 790px;
   width: 1170px;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .card {
   height: 390px;
   width: 280px;
@@ -193,12 +196,11 @@ img {
   border: solid 1px #f2f2f2;
   padding: 10px;
   margin: 5px;
-
   display: flex;
   flex-direction: column;
 }
 .card:hover {
-  box-shadow: 1px 10px 10px 1px rgb(0 0 0 / 40%);
+  box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.4);
 }
 .card__image {
   width: 260px;
@@ -244,7 +246,6 @@ img {
   list-style-type: none;
   margin: 5px;
 }
-
 .card p {
   width: 280px;
   font-size: 20px;
@@ -268,26 +269,30 @@ img {
   cursor: pointer;
   transition: 0.5s;
 }
+
 .presentacion-container {
   width: 100%;
   height: 550px;
-  background-image: url('../img/home/image-home.jpeg');
+  background-image: url("../img/home/image-home.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .box__container {
   margin: 0 auto;
   width: 1170px;
   height: 504px;
   padding: 24px 15px;
 }
+
 .box__content {
   width: 457.5px;
   height: 432px;
   padding: 70px 40px 20px;
   background-color: #437f86;
 }
+
 .box__title {
   width: 341.58px;
   height: 76.22px;
@@ -297,11 +302,7 @@ img {
   padding: 0px 0px 10px;
   color: #ffffff;
 }
-span {
-  width: 341.58px;
-  height: 76.22px;
-  font-size: 24px;
-}
+
 .box__text {
   font-size: 18px;
   font-weight: 300;
@@ -312,13 +313,19 @@ span {
   color: #ffffff;
 }
 
-/*--------- NOSOTROS -----------*/
+span {
+  width: 341.58px;
+  height: 76.22px;
+  font-size: 24px;
+}
 
+/*--------- NOSOTROS -----------*/
 .superior-nosotros {
   height: 183px;
   width: 100%;
   background-image: url(../img/nosotros/nosotros-bg.jpg);
 }
+
 .nosotros {
   color: #383838;
   width: 100%;
@@ -328,6 +335,7 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 .nosotros__title h2 {
   font-size: 44px;
   font-family: work sans-serif;
@@ -337,6 +345,7 @@ span {
   display: inline-block;
   line-height: 1.44;
 }
+
 .nosotros__text p {
   font-size: 17px;
   font-weight: 400;
@@ -346,34 +355,37 @@ span {
   margin-left: 50px;
   border-left: solid 3px #437f86;
 }
+
 .inferior-nosotros {
   height: 974px;
   width: 100%;
   padding: 24px 0px;
-
   display: flex;
   justify-content: center;
 }
+
 .descripcion {
   width: 1170px;
   height: 926px;
   margin: 0px 15px;
-
   display: flex;
   justify-content: center;
 }
+
 .descripcion__box-container {
   width: 585px;
   height: 926px;
   padding: 0px 15px 24px;
 }
+
 .descripcion__box {
   width: 555px;
   height: 902.21px;
   padding: 70px 40px 20px;
   background-color: #437f86;
-  box-shadow: 6px 6px 25px 0 rgb(0 0 0 / 39%);
+  box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, 0.39);
 }
+
 .descripcion__box h2 {
   font-size: 22px;
   font-family: work sans, sans-serif;
@@ -381,9 +393,11 @@ span {
   margin: 0px 0px 14px;
   padding: 0px 0px 10px;
 }
+
 .descripcion__box span {
   font-size: 24px;
 }
+
 .descripcion__box div {
   font-family: work sans, sans-serif;
   font-size: 18px;
@@ -395,23 +409,25 @@ span {
   margin-bottom: 30px;
   overflow: hidden;
 }
+
 .descripcion__img {
   width: 585px;
   height: 680px;
   padding: 0px 15px;
 }
+
 .descripcion__img img {
   width: 555px;
   height: 680px;
 }
 
 /*---------- PROPIEDADES ---------*/
-
 .superior-propiedades {
   height: 183px;
   width: 100%;
   background-image: url(../img/nosotros/nosotros-bg.jpg);
 }
+
 .propiedades-section {
   color: #383838;
   width: 100%;
@@ -422,6 +438,7 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 .propiedades__titulo h2 {
   font-size: 44px;
   font-family: work sans-serif;
@@ -431,6 +448,7 @@ span {
   display: inline-block;
   line-height: 1.44;
 }
+
 .propiedades__text p {
   font-size: 17px;
   font-weight: 400;
@@ -440,29 +458,30 @@ span {
   margin-left: 50px;
   border-left: solid 3px #437f86;
 }
+
 .inferior-propiedades {
   width: 100%;
   height: 100%;
   padding-top: 30px;
 }
+
 .cards-prop {
   height: 100%;
   width: 1170px;
   margin: 0 auto;
   padding-bottom: 20px;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
 
 /*--------- PEDIDOS ---------*/
-
 .pedidos-container {
   height: 183.33px;
   width: 100%;
   background-image: url(../img/contacto/contacto-bg.jpg);
 }
+
 .pedidos {
   color: #383838;
   width: 100%;
@@ -472,6 +491,7 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 .pedidos__title h2 {
   font-size: 44px;
   font-family: work sans-serif;
@@ -481,6 +501,7 @@ span {
   display: inline-block;
   line-height: 1.44;
 }
+
 .pedidos__text p {
   font-size: 17px;
   font-weight: 400;
@@ -490,12 +511,14 @@ span {
   margin-left: 50px;
   border-left: solid 3px #437f86;
 }
+
 .mid-container {
   width: 100%;
   height: 546px;
   padding: 24px 0px;
   place-content: center;
 }
+
 .mid {
   width: 1170px;
   height: 500px;
@@ -504,17 +527,20 @@ span {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
 }
+
 .box-mail {
   width: 585;
   height: 485px;
   padding: 0px 15px 24px;
 }
+
 .box-info {
   width: 555px;
   height: 432px;
   padding: 70px 40px 20px;
   background-color: #437f86;
 }
+
 .box-info h2 {
   width: 252px;
   height: 76px;
@@ -525,6 +551,7 @@ span {
   padding-bottom: 10px;
   color: #fff;
 }
+
 .box-info p {
   width: 475px;
   height: 222px;
@@ -536,21 +563,25 @@ span {
   line-height: 1.76;
   color: #fff;
 }
+
 .box-info p a {
   text-decoration: none;
   color: #aaaddd;
 }
+
 .img-container {
   position: relative;
   width: 585px;
   height: 500px;
   padding: 24px 15px 0px;
 }
+
 .img-container img {
   position: absolute;
   width: 390px;
   height: 400px;
 }
+
 .rectangulo {
   position: absolute;
   left: 250px;
@@ -560,13 +591,14 @@ span {
   height: 250px;
   opacity: 0.8;
 }
-/*--------- CONTACTO ----------*/
 
+/*--------- CONTACTO ----------*/
 .contacto-container {
   height: 183.33px;
   width: 100%;
   background-image: url(../img/contacto/contacto-bg.jpg);
 }
+
 .contacto {
   color: #383838;
   width: 100%;
@@ -576,6 +608,7 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 .contacto__title h2 {
   font-size: 44px;
   font-family: work sans-serif;
@@ -585,6 +618,7 @@ span {
   display: inline-block;
   line-height: 1.44;
 }
+
 .contacto__text p {
   font-size: 17px;
   font-weight: 400;
@@ -594,34 +628,37 @@ span {
   margin-left: 50px;
   border-left: solid 3px #437f86;
 }
+
 .contacto-container-main {
   height: 654px;
   width: 100%;
   padding: 24px 0px;
-
   display: flex;
   justify-content: center;
 }
+
 .contacto-box-container {
   height: 600px;
   width: 1170px;
   margin: 0px 38px;
   padding: 24px 15px;
-
   display: flex;
   justify-content: center;
 }
+
 .contacto__box {
   height: 498px;
   width: 585px;
   padding: 0px 15px 24px;
 }
+
 .input {
   height: 474px;
   width: 555px;
   padding: 40px;
   background-color: #f8f8f8;
 }
+
 .input p {
   width: 475px;
   height: 35px;
@@ -631,6 +668,7 @@ span {
   padding-bottom: 5px;
   margin: 0px 0px 10px;
 }
+
 .line {
   margin-bottom: 6px;
   border-top-width: 4px;
@@ -638,10 +676,12 @@ span {
   border-top-color: #437f86;
   width: 60px;
 }
+
 .input form {
   height: 308px;
   width: 475px;
 }
+
 .input-group {
   margin-bottom: 15px;
   font-family: work sans, sans-serif;
@@ -652,6 +692,7 @@ span {
   border: 0px;
   border-bottom: solid 1px #ccc;
 }
+
 .contacto__btn {
   color: white;
   background: #437f86;
@@ -664,6 +705,7 @@ span {
   font-size: 14px;
   height: 46px;
 }
+
 .contacto__map {
   height: 552px;
   width: 585px;
@@ -672,7 +714,6 @@ span {
 }
 
 /*---------- FOOTER -----------*/
-
 footer {
   height: 302px;
   background-repeat: repeat-x;
@@ -681,12 +722,14 @@ footer {
   padding-bottom: 30px;
   color: #15120e;
 }
+
 .footer__container {
   display: flex;
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .footer__logo {
   height: 149px;
   width: 292.5px;
@@ -694,36 +737,42 @@ footer {
   padding-left: 15px;
   padding-bottom: 10px;
   padding-top: 5px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .footer__logo img {
   justify-content: center;
 }
+
 .footer__logo ul {
   list-style-type: none;
 }
+
 .footer-social {
   margin-top: 10px;
   display: flex;
 }
+
 .footer-social li a {
   padding: 15px 15px;
   color: #437f86;
   opacity: 0.4;
 }
+
 .footer-social li a:hover {
   opacity: 1;
 }
+
 .footer__contacto {
   height: 147px;
   width: 487.5px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .footer__contacto-title {
   height: 28px;
   font-size: 22px;
@@ -731,18 +780,21 @@ footer {
   color: #15120e;
   margin-bottom: 10px;
 }
+
 .footer__contacto-info {
   font-size: 16px;
   line-height: 26px;
   color: #15120e;
   margin-bottom: 5px;
 }
+
 .footer__tasar {
   height: 162px;
   width: 390px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .footer__tasar-title {
   height: 28px;
   font-size: 22px;
@@ -750,17 +802,20 @@ footer {
   color: #15120e;
   margin-bottom: 10px;
 }
+
 .footer__tasar-info {
   font-size: 16px;
   line-height: 26px;
   color: #15120e;
   margin-bottom: 5px;
 }
+
 .footer__tasar-info a {
   color: #437f86;
   font-weight: 600;
   text-decoration: none;
 }
+
 .copyright {
   height: 67px;
   width: 100%;
@@ -773,6 +828,7 @@ footer {
   font-size: 12px;
   color: #ffffff;
 }
+
 .copyright-container {
   width: 1170px;
   margin: 0 auto;
@@ -781,16 +837,18 @@ footer {
   align-items: center;
   padding: 25px;
 }
+
 .copyright-develop a {
   color: #ddd;
   text-decoration: none;
   font-size: 12px;
 }
+
 .copyright-develop a:hover {
   color: #15120e;
 }
-/*--------- MEDIA QUERIES ---------*/
 
+/*--------- MEDIA QUERIES ---------*/
 @media screen and (max-width: 1199px) {
   .navbar-container {
     width: 940px;
@@ -805,7 +863,6 @@ footer {
     padding-right: 140px;
   }
   /* NAVBAR SEARCH */
-
   .search-container {
     width: 970px;
     display: flex;
@@ -899,7 +956,6 @@ footer {
     height: 100%;
   }
   /* PROPIEDADES */
-
   .cards-prop {
     width: 970px;
   }
@@ -993,7 +1049,6 @@ footer {
     margin-top: 30px;
     padding: 70px 40px 20px;
   }
-
   /* NOSOTROS */
   .superior-nosotros {
     height: 275px;
@@ -1026,13 +1081,11 @@ footer {
     margin: 0 auto;
   }
   /* PROPIEDADES */
-
-    .cards-prop {
-      width: 998px;
-      grid-template-columns: repeat(3, 1fr);
+  .cards-prop {
+    width: 998px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    }
-
+  }
   /* FOOTER */
   footer {
     height: auto;
@@ -1088,11 +1141,9 @@ footer {
   .navegacion {
     padding: 0;
     display: flex;
-
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-
     list-style: none;
     height: 30%;
   }
@@ -1110,13 +1161,11 @@ footer {
     display: flex;
     justify-content: center;
   }
-
   .contenedor_logo img {
     border-radius: 50%;
     width: 250px;
     height: 150px;
   }
-
   .acomodar {
     position: relative;
     top: 10px;
@@ -1141,7 +1190,6 @@ footer {
     display: none;
   }
   /* HOME */
-
   .propiedades {
     width: 100%;
     height: auto;
@@ -1153,7 +1201,6 @@ footer {
     height: auto;
     width: 100%;
     margin: 0 15px;
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
@@ -1209,7 +1256,6 @@ footer {
     line-height: 1.56;
     font-stretch: normal;
   }
-
   /* NOSOTROS */
   .superior-nosotros {
     width: 100%;
@@ -1245,7 +1291,6 @@ footer {
     height: auto;
     padding: 30px 15px;
   }
-
   .descripcion__box h2 {
     font-size: 32px;
     line-height: 1.44;
@@ -1270,9 +1315,7 @@ footer {
   .descripcion__img img {
     height: auto;
   }
-
   /* PROPIEDADES */
-
   /* FOOTER */
   footer {
     height: auto;
@@ -1324,4 +1367,4 @@ footer {
   .copyright-develop {
     margin-top: 15px;
   }
-}
+}/*# sourceMappingURL=main.css.map */

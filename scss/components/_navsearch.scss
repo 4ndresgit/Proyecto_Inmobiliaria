@@ -1,0 +1,44 @@
+/*----------- NAV SEARCH ------------*/
+
+.search {
+  width: 100%;
+  height: 93px;
+  background-color: #437f86;
+
+  &-container {
+    width: auto;
+    height: 92px;
+    margin: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: work sans, sans-serif;
+    color: #ffffff;
+  }
+  &-title {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  &-btn {
+    color: #ffffff;
+    background-color: #383838;
+    transition: 0.5s;
+    height: 40px;
+    width: 160px;
+    border-radius: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border: solid 1px transparent;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
