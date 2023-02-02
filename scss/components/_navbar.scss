@@ -60,25 +60,17 @@ img {
 
   display: flex;
   justify-content: end;
-
-  ul {
-    li {
-      padding: 0px 5px;
-
-      a {
-        padding: 15px 15px;
-        color: #437f86;
-        font-size: 12px;
-        opacity: 0.4;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
-  }
   &__links {
     text-decoration: none;
     list-style-type: none;
+    a {
+      padding: 15px 15px;
+      color: #437f86;
+      font-size: 12px;
+      opacity: 0.4;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }

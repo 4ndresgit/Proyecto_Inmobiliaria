@@ -751,18 +751,18 @@ footer {
   list-style-type: none;
 }
 
-.footer-social {
+.footer__social {
   margin-top: 10px;
   display: flex;
 }
 
-.footer-social li a {
+.footer__social li a {
   padding: 15px 15px;
   color: #437f86;
   opacity: 0.4;
 }
 
-.footer-social li a:hover {
+.footer__social li a:hover {
   opacity: 1;
 }
 
