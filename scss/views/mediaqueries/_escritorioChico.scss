@@ -1,0 +1,175 @@
+
+@media screen and (max-width: 1199px) {
+  .navbar-container {
+    width: 940px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .navbar-links {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .social {
+    padding-right: 140px;
+  }
+  .search-container {
+    width: 970px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search-btn {
+    width: 100px;
+  }
+  .propiedades {
+    width: 970px;
+    margin: 0 auto;
+  }
+  .propiedades__title {
+    width: 970px;
+  }
+  .cards {
+    width: 970px;
+    margin-left: 0;
+  }
+  .card {
+    width: 240px;
+    height: 390px;
+    display: flex;
+    span {
+      margin-top: 12px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: $color_5;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      margin-bottom: 0px;
+      line-height: 40px;
+    }
+    button {
+      margin-top: 15px;
+      margin-right: 0px;
+      padding: 5px 5px;
+      font-size: 14px;
+    }
+  }
+  .card__image {
+    width: 220px;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__text {
+    ul {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  }
+  .presentacion-container {
+    height: 551.88px;
+    padding: 24px 0;
+  }
+  .box-container {
+    width: 970px;
+  }
+  .superior-nosotros {
+    height: 247px;
+  }
+  .nosotros {
+    font-size: 44px;
+  }
+  .inferior-nosotros {
+    height: 1060px;
+    margin-bottom: 40px;
+  }
+  .descripcion {
+    width: 970px;
+    height: 1052px;
+  }
+  .descripcion__box {
+    width: 485px;
+    height: 1052px;
+  }
+  .descripcion__img {
+    width: 455px;
+    height: 560px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cards-prop {
+    width: 970px;
+  }
+  .mid {
+    width: 970px;
+    height: 520px;
+  }
+  .form-container {
+    width: 970px;
+  }
+  .img-container {
+    width: 455px;
+    height: 389px;
+  }
+  .box-info {
+    width: 455px;
+    height: 495px;
+    p {
+      width: 375px;
+      height: 285px;
+    }
+  }
+  .contacto-box-container {
+    width: 970px;
+    margin: 0 auto;
+  }
+  .contacto__box {
+    width: 485px;
+    height: 557px;
+  }
+  .contacto__box-info {
+    width: 100%;
+    height: 100%;
+  }
+  .contacto__map {
+    width: 485px;
+    height: 550px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .footer__container {
+    margin: 0 auto;
+    width: 970px;
+    height: 225px;
+    padding: 0px 15px;
+  }
+  .footer__logo {
+    margin-top: 30px;
+  }
+  .footer__tasar {
+    height: 216px;
+    width: 323.32px;
+    padding: 0 -15px;
+  }
+  .footer__contacto {
+    height: 224.96px;
+    width: 323.32px;
+    padding: 0 15px;
+  }
+  .footer__tasar-info {
+    padding-top: 20px;
+  }
+  .copyright-container {
+    width: 970px;
+    margin-top: 50px;
+  }
+}

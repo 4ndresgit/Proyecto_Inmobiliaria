@@ -1,2 +1,157 @@
 
+/* Banner Nosotros */
 
+.superior-nosotros {
+  height: 183px;
+  width: 100%;
+  background-image: url(../img/nosotros/nosotros-bg.jpg);
+}
+.nosotros {
+  color: $color_5;
+  width: 100%;
+  height: 100%;
+  background-color: $background-color_6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nosotros__title {
+  h2 {
+    font-size: 44px;
+    font-family: $font-family_1;
+    color: $color_5;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+    line-height: 1.44;
+  }
+}
+.nosotros__text {
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: $color_5;
+    padding: 10px 50px;
+    margin-left: 50px;
+    border-left: solid 3px #437f86;
+  }
+}
+
+/* Banner Propiedades */
+
+.superior-propiedades {
+  height: 183px;
+  width: 100%;
+  background-image: url(../img/nosotros/nosotros-bg.jpg);
+}
+.propiedades-section {
+  color: $color_5;
+  width: 100%;
+  height: 100%;
+  background-color: $background-color_6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.propiedades__titulo {
+  h2 {
+    font-size: 44px;
+    font-family: $font-family_1;
+    color: $color_5;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+    line-height: 1.44;
+  }
+}
+.propiedades__text {
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: $color_5;
+    padding: 10px 50px;
+    margin-left: 50px;
+    border-left: solid 3px #437f86;
+  }
+}
+
+/* Banner Dejanos tu pedido */
+
+.pedidos-container {
+  height: 183.33px;
+  width: 100%;
+  background-image: url(../img/contacto/contacto-bg.jpg);
+}
+.pedidos {
+  color: $color_5;
+  width: 100%;
+  height: 100%;
+  background-color: $background-color_6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pedidos__title {
+  h2 {
+    font-size: 44px;
+    font-family: $font-family_1;
+    color: $color_5;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+    line-height: 1.44;
+  }
+}
+.pedidos__text {
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: $color_5;
+    padding: 10px 50px;
+    margin-left: 50px;
+    border-left: solid 3px #437f86;
+  }
+}
+
+/* Banner Contacto */
+
+.contacto-container {
+  height: 183.33px;
+  width: 100%;
+  background-image: url(../img/contacto/contacto-bg.jpg);
+}
+.contacto {
+  color: $color_5;
+  width: 100%;
+  height: 100%;
+  background-color: $background-color_6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__title {
+  h2 {
+    font-size: 44px;
+    font-family: $font-family_1;
+    color: $color_5;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+    line-height: 1.44;
+  }
+}
+.contacto__text {
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: $color_5;
+    padding: 10px 50px;
+    margin-left: 50px;
+    border-left: solid 3px #437f86;
+  }
+}

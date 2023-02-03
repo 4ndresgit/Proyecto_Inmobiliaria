@@ -1,0 +1,161 @@
+
+
+@media screen and (max-width: 998px) {
+  header {
+    height: 250px;
+    margin: 0 auto;
+  }
+  .navbar-container {
+    width: 720px;
+    height: 100%;
+    img {
+      margin-left: 30px;
+    }
+  }
+  .social {
+    padding-top: 40px;
+    margin-right: 200px;
+  }
+  .navbar-links {
+    height: 55px;
+    padding-top: 100px;
+    margin-right: 200px;
+  }
+  .propiedades {
+    width: auto;
+    height: 1990px;
+    margin: 0 auto;
+  }
+  .propiedades__title {
+    width: auto;
+  }
+  .cards {
+    height: 1900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0;
+    align-items: center;
+    justify-items: center;
+  }
+  .card {
+    width: 375px;
+    height: 453px;
+    display: flex;
+  }
+  .card__image {
+    width: 100%;
+    height: 350px;
+  }
+  .box-container {
+    width: 750px;
+    height: 409px;
+    margin: 0 auto;
+    padding: 24px 15px;
+    overflow: hidden;
+  }
+  .box__content {
+    width: 720px;
+    height: 337px;
+    margin-top: 30px;
+    padding: 70px 40px 20px;
+  }
+  .superior-nosotros {
+    height: 275px;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  .search-title {
+    display: none;
+  }
+  .inferior-nosotros {
+    height: 850px;
+  }
+  .descripcion {
+    width: 100%;
+    height: 800px;
+  }
+  .descripcion__img {
+    display: none;
+  }
+  .descripcion__box-container {
+    width: 100%;
+    height: 800px;
+  }
+  .descripcion__box {
+    width: 750px;
+    height: 800px;
+    margin: 0 auto;
+  }
+  .cards-prop {
+    width: 998px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .mid-container {
+    height: auto;
+  }
+  .img-container {
+    display: none;
+  }
+  .mid {
+    width: 750px;
+    height: 424px;
+  }
+  .box-info {
+    width: 720px;
+    height: 400px;
+    p {
+      width: 640px;
+      height: 190px;
+    }
+  }
+  .form-container {
+    width: 750px;
+    height: 805px;
+  }
+  .contacto-box-container {
+    width: 750px;
+  }
+  .contacto__box {
+    width: 375px;
+    height: 557px;
+  }
+  .contacto__map {
+    width: 375px;
+    height: 552px;
+  }
+  footer {
+    height: auto;
+    padding-top: 70px;
+  }
+  .footer__tasar {
+    margin-left: 10px;
+  }
+  .footer__container {
+    padding-bottom: 70px;
+    width: 750px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__logo {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 25px;
+  }
+  .footer__contacto {
+    padding-top: 10px;
+  }
+  .copyright-container {
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+}
