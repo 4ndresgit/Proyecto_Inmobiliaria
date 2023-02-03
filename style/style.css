@@ -116,14 +116,15 @@ img {
   align-items: center;
   justify-content: space-evenly;
   font-family: work sans, sans-serif;
-  color: #ffffff;
+  color: #f8f8f8;
 }
 .search-title {
   font-size: 24px;
   color: #ffffff;
 }
+
 .search-btn {
-  color: #ffffff;
+  color: #f8f8f8;
   background-color: #383838;
   transition: 0.5s;
   height: 40px;
@@ -499,6 +500,7 @@ span {
   height: 546px;
   padding: 24px 0px;
   place-content: center;
+  margin: 0 auto;
 }
 .mid {
   width: 1170px;
@@ -575,7 +577,7 @@ span {
   margin: 0 auto;
   padding: 40px;
 }
-form {
+.row {
   width: 1090;
   height: 583px;
   font-size: 14px;
@@ -604,20 +606,20 @@ form {
 }
 .form-control {
   display: block;
-    width: 100%;
-    min-height: 44px;
-    padding: 12px 2px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: transparent;
-    background-image: none;
-    border: 0px;
-    border-radius: 0px;
-    border-bottom: 1px solid #ccc;
-    box-shadow: inset 0 1px 1px rgb(0 0 0 / 0%);
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 2px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: transparent;
+  background-image: none;
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 0%);
 }
-.btn-enviar{
+.btn-enviar {
   background-color: #437f86;
   color: white;
   padding: 0 55px;
@@ -660,34 +662,30 @@ form {
   border-left: solid 3px #437f86;
 }
 .contacto-container-main {
-  height: 654px;
+  height: 658px;
   width: 100%;
   padding: 24px 0px;
-
-  display: flex;
-  justify-content: center;
 }
 .contacto-box-container {
-  height: 600px;
+  height: 605px;
   width: 1170px;
-  margin: 0px 38px;
+  margin: 0px auto;
   padding: 24px 15px;
-
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
 .contacto__box {
-  height: 498px;
+  height: 557px;
   width: 585px;
   padding: 0px 15px 24px;
 }
-.input {
+.contacto__box-info {
   height: 474px;
   width: 555px;
   padding: 40px;
   background-color: #f8f8f8;
 }
-.input p {
+.contacto__box-info p {
   width: 475px;
   height: 35px;
   font-size: 24px;
@@ -696,17 +694,21 @@ form {
   padding-bottom: 5px;
   margin: 0px 0px 10px;
 }
-.line {
+.input-group input,
+textarea {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.contacto__box-line {
   margin-bottom: 6px;
   border-top-width: 4px;
   border-top-style: solid;
   border-top-color: #437f86;
   width: 60px;
 }
-.input form {
-  height: 308px;
-  width: 475px;
-}
+
 .input-group {
   margin-bottom: 15px;
   font-family: work sans, sans-serif;
@@ -732,10 +734,9 @@ form {
 .contacto__map {
   height: 552px;
   width: 585px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 15px;
 }
-
+*/
 /*---------- FOOTER -----------*/
 
 footer {
@@ -771,16 +772,16 @@ footer {
 .footer__logo ul {
   list-style-type: none;
 }
-.footer-social {
+.footer__social {
   margin-top: 10px;
   display: flex;
 }
-.footer-social li a {
+.footer__social li a {
   padding: 15px 15px;
   color: #437f86;
   opacity: 0.4;
 }
-.footer-social li a:hover {
+.footer__social li a:hover {
   opacity: 1;
 }
 .footer__contacto {
@@ -968,6 +969,51 @@ footer {
   .cards-prop {
     width: 970px;
   }
+
+  /* PEDIDOS */
+
+  .mid {
+    width: 970px;
+    height: 520px;
+  }
+  .form-container {
+    width: 970px;
+  }
+  .img-container {
+    width: 455px;
+    height: 389px;
+  }
+  .box-info {
+    width: 455px;
+    height: 495px;
+  }
+  .box-info p {
+    width: 375px;
+    height: 285px;
+  }
+
+  /* CONTACTO */
+
+  .contacto-box-container {
+    width: 970px;
+    margin: 0 auto;
+  }
+  .contacto__box {
+    width: 485px;
+    height: 557px;
+  }
+  .contacto__box-info {
+    width: 100%;
+    height: 100%;
+  }
+  .contacto__map {
+    width: 485px;
+    height: 550px;
+  }
+  .contacto__map iframe {
+    width: 100%;
+    height: 100%;
+  }
   /* FOOTER */
   .footer__container {
     margin: 0 auto;
@@ -1098,6 +1144,44 @@ footer {
     grid-template-rows: repeat(8, 1fr);
   }
 
+  /* PEDIDOS */
+
+  .mid-container {
+    height: auto;
+  }
+  .img-container {
+    display: none;
+  }
+  .mid {
+    width: 750px;
+    height: 424px;
+  }
+  .box-info {
+    width: 720px;
+    height: 400px;
+  }
+  .box-info p {
+    width: 640px;
+    height: 190px;
+  }
+  .form-container {
+    width: 750px;
+    height: 805px;
+  }
+
+  /* CONTACTO */
+
+  .contacto-box-container {
+    width: 750px;
+  }
+  .contacto__box {
+    width: 375px;
+    height: 557px;
+  }
+  .contacto__map {
+    width: 375px;
+    height: 552px;
+  }
   /* FOOTER */
   footer {
     height: auto;
@@ -1338,6 +1422,32 @@ footer {
 
   /* PROPIEDADES */
 
+  /* PEDIDOS */
+
+  .form-container {
+    width: auto;
+    height: auto;
+  }
+
+  /* CONTACTO*/
+
+  .contacto-container-main {
+    height: auto;
+  }
+  .contacto-box-container {
+    width: auto;
+    height: 1157px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto__box {
+    width: auto;
+    height: auto;
+  }
+  .contacto__map {
+    width: auto;
+    height: 100%;
+  }
   /* FOOTER */
   footer {
     height: auto;
