@@ -80,19 +80,21 @@ img {
   display: flex;
   justify-content: end;
 }
-
-.social__links {
-  text-decoration: none;
-  list-style-type: none;
+.social ul li {
+  padding: 0px 5px;
 }
-.social__links a {
+.social li a {
   padding: 15px 15px;
   color: #437f86;
   font-size: 12px;
   opacity: 0.4;
 }
-.social__links a:hover{
+.social li a:hover {
   opacity: 1;
+}
+.social__links {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /*----------- NAV SEARCH ------------*/
@@ -242,7 +244,11 @@ img {
   list-style-type: none;
   margin: 5px;
 }
-
+.card__text ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
 .card p {
   width: 280px;
   font-size: 20px;
@@ -274,7 +280,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.box__container {
+.box-container {
   margin: 0 auto;
   width: 1170px;
   height: 504px;
@@ -558,6 +564,67 @@ span {
   height: 250px;
   opacity: 0.8;
 }
+.form-pedidos {
+  width: 100%;
+  height: 758.8px;
+  padding-top: 24px;
+}
+.form-container {
+  width: 1170px;
+  height: 687px;
+  margin: 0 auto;
+  padding: 40px;
+}
+form {
+  width: 1090;
+  height: 583px;
+  font-size: 14px;
+  line-height: 1.42;
+  cursor: auto;
+}
+.col-xs-12 {
+  padding: 15px 15px;
+}
+.col-xs-12 p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 0 10px;
+}
+.separator-color-x {
+  margin-bottom: 6px;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: #437f86;
+  width: 60px;
+}
+.form-control {
+  display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 2px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent;
+    background-image: none;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 0%);
+}
+.btn-enviar{
+  background-color: #437f86;
+  color: white;
+  padding: 0 55px;
+  line-height: 44px;
+  border-radius: 50px;
+  float: right;
+}
 /*--------- CONTACTO ----------*/
 
 .contacto-container {
@@ -704,16 +771,16 @@ footer {
 .footer__logo ul {
   list-style-type: none;
 }
-.footer__social {
+.footer-social {
   margin-top: 10px;
   display: flex;
 }
-.footer__social li a {
+.footer-social li a {
   padding: 15px 15px;
   color: #437f86;
   opacity: 0.4;
 }
-.footer__social li a:hover {
+.footer-social li a:hover {
   opacity: 1;
 }
 .footer__contacto {
@@ -1025,11 +1092,11 @@ footer {
   }
   /* PROPIEDADES */
 
-    .cards-prop {
-      width: 998px;
-      grid-template-columns: repeat(3, 1fr);
+  .cards-prop {
+    width: 998px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    }
+  }
 
   /* FOOTER */
   footer {
