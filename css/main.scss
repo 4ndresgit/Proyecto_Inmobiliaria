@@ -16,26 +16,29 @@
 
 $color_1: #212121;
 $color_2: #437f86;
-$color_3: #ffffff;
-$color_4: #383838;
-$color_5: #808080;
-$color_6: #fff;
-$color_7: #aaaddd;
-$color_8: white;
-$color_9: #15120e;
-$color_10: #ddd;
+$color_3: #f8f8f8;
+$color_4: #ffffff;
+$color_5: #383838;
+$color_6: #808080;
+$color_7: #fff;
+$color_8: #aaaddd;
+$color_9: #555;
+$color_10: white;
+$color_11: #15120e;
+$color_12: #ddd;
 $font-family_1: work sans, sans-serif;
-
+$font-family_2: work sans, sans sans-serif;
+$font-family_3: work sans-serif;
 $background-color_1: #ffffff;
 $background-color_2: #437f86;
 $background-color_3: #383838;
-$background-color_4: #212121;
+$background-color_4: black;
 $background-color_5: #e2e2e2;
 $background-color_6: rgba(255, 255, 255, 0.592);
-$background-color_7: #f8f8f8;
+$background-color_7: transparent;
+$background-color_8: #f8f8f8;
 $border-color_1: #fff;
 $border-top-color_1: #437f86;
-
 
 
 * {
@@ -93,7 +96,7 @@ img {
 			height: 30px;
 			padding: 10px 12px;
 			font-size: 15px;
-			font-family: $font-family_1;
+			font-family: $font-family_2;
 			color: $color_1;
 			font-weight: 600;
 			text-decoration: none;
@@ -109,22 +112,29 @@ img {
 	margin: 20px 0px 0px;
 	padding: 10px 0px 0px;
 	gap: 20px;
-	font-family: $font-family_1;
+	font-family: $font-family_2;
 	display: flex;
 	justify-content: end;
+	ul {
+		li {
+			padding: 0px 5px;
+		}
+	}
+	li {
+		a {
+			padding: 15px 15px;
+			color: $color_2;
+			font-size: 12px;
+			opacity: 0.4;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
 }
 .social__links {
 	text-decoration: none;
 	list-style-type: none;
-	a {
-		padding: 15px 15px;
-		color: $color_2;
-		font-size: 12px;
-		opacity: 0.4;
-		&:hover {
-			opacity: 1;
-		}
-	}
 }
 .search {
 	width: 100%;
@@ -147,7 +157,7 @@ img {
 }
 .search-title {
 	font-size: 24px;
-	color: $color_3;
+	color: $color_4;
 }
 .search-btn {
 	color: $color_3;
@@ -199,7 +209,7 @@ img {
 	margin-bottom: 10px;
 	font-weight: 700;
 	line-height: 1.1;
-	color: $color_4;
+	color: $color_5;
 }
 .cards {
 	margin: 0 15px;
@@ -223,7 +233,7 @@ img {
 	h2 {
 		font-size: 15px;
 		font-weight: 500;
-		color: $color_4;
+		color: $color_5;
 		line-height: 18px;
 		margin-top: 0px;
 		margin-bottom: 5px;
@@ -236,7 +246,7 @@ img {
 		width: 280px;
 		font-size: 20px;
 		font-weight: 500;
-		color: $color_4;
+		color: $color_5;
 		padding-top: 30px;
 		padding-bottom: 20px;
 		margin-bottom: 20px;
@@ -244,7 +254,7 @@ img {
 		text-align: left;
 	}
 	button {
-		color: $color_3;
+		color: $color_4;
 		background-color: $background-color_2;
 		border: solid 1px #437f86;
 		margin-top: 30px;
@@ -278,7 +288,7 @@ img {
 	ul {
 		height: 50px;
 		font-size: 12px;
-		color: $color_5;
+		color: $color_6;
 		line-height: 16px;
 		letter-spacing: -0.4px;
 		margin-bottom: 5px;
@@ -286,6 +296,9 @@ img {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		display: flex;
+		justify-content: flex-start;
+		margin-left: 0px;
 	}
 }
 .presentacion-container {
@@ -296,7 +309,7 @@ img {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.box__container {
+.box-container {
 	margin: 0 auto;
 	width: 1170px;
 	height: 504px;
@@ -315,7 +328,7 @@ img {
 	font-weight: 600;
 	margin: 0px 0px 10px;
 	padding: 0px 0px 10px;
-	color: $color_3;
+	color: $color_4;
 }
 span {
 	width: 341.58px;
@@ -329,7 +342,7 @@ span {
 	font-style: normal;
 	line-height: 1.76;
 	margin-bottom: 30px;
-	color: $color_3;
+	color: $color_4;
 }
 .superior-nosotros {
 	height: 183px;
@@ -337,7 +350,7 @@ span {
 	background-image: url(../img/nosotros/nosotros-bg.jpg);
 }
 .nosotros {
-	color: $color_4;
+	color: $color_5;
 	width: 100%;
 	height: 100%;
 	background-color: $background-color_6;
@@ -348,8 +361,8 @@ span {
 .nosotros__title {
 	h2 {
 		font-size: 44px;
-		font-family: $font-family_1;
-		color: $color_4;
+		font-family: $font-family_3;
+		color: $color_5;
 		font-weight: 700;
 		margin-bottom: 10px;
 		display: inline-block;
@@ -361,7 +374,7 @@ span {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 1.75;
-		color: $color_4;
+		color: $color_5;
 		padding: 10px 50px;
 		margin-left: 50px;
 		border-left: solid 3px #437f86;
@@ -395,7 +408,7 @@ span {
 	h2 {
 		font-size: 22px;
 		font-family: $font-family_1;
-		color: $color_3;
+		color: $color_4;
 		margin: 0px 0px 14px;
 		padding: 0px 0px 10px;
 	}
@@ -409,7 +422,7 @@ span {
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 1.75;
-		color: $color_3;
+		color: $color_4;
 		margin-bottom: 30px;
 		overflow: hidden;
 	}
@@ -429,7 +442,7 @@ span {
 	background-image: url(../img/nosotros/nosotros-bg.jpg);
 }
 .propiedades-section {
-	color: $color_4;
+	color: $color_5;
 	width: 100%;
 	height: 100%;
 	background-color: $background-color_6;
@@ -441,8 +454,8 @@ span {
 .propiedades__titulo {
 	h2 {
 		font-size: 44px;
-		font-family: $font-family_1;
-		color: $color_4;
+		font-family: $font-family_3;
+		color: $color_5;
 		font-weight: 700;
 		margin-bottom: 10px;
 		display: inline-block;
@@ -454,7 +467,7 @@ span {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 1.75;
-		color: $color_4;
+		color: $color_5;
 		padding: 10px 50px;
 		margin-left: 50px;
 		border-left: solid 3px #437f86;
@@ -480,7 +493,7 @@ span {
 	background-image: url(../img/contacto/contacto-bg.jpg);
 }
 .pedidos {
-	color: $color_4;
+	color: $color_5;
 	width: 100%;
 	height: 100%;
 	background-color: $background-color_6;
@@ -491,8 +504,8 @@ span {
 .pedidos__title {
 	h2 {
 		font-size: 44px;
-		font-family: $font-family_1;
-		color: $color_4;
+		font-family: $font-family_3;
+		color: $color_5;
 		font-weight: 700;
 		margin-bottom: 10px;
 		display: inline-block;
@@ -504,7 +517,7 @@ span {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 1.75;
-		color: $color_4;
+		color: $color_5;
 		padding: 10px 50px;
 		margin-left: 50px;
 		border-left: solid 3px #437f86;
@@ -515,6 +528,7 @@ span {
 	height: 546px;
 	padding: 24px 0px;
 	place-content: center;
+	margin: 0 auto;
 }
 .mid {
 	width: 1170px;
@@ -542,7 +556,7 @@ span {
 		font-weight: 600;
 		line-height: 1.44;
 		padding-bottom: 10px;
-		color: $color_6;
+		color: $color_7;
 	}
 	p {
 		width: 475px;
@@ -553,10 +567,10 @@ span {
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 1.76;
-		color: $color_6;
+		color: $color_7;
 		a {
 			text-decoration: none;
-			color: $color_7;
+			color: $color_8;
 		}
 	}
 }
@@ -580,13 +594,74 @@ span {
 	height: 250px;
 	opacity: 0.8;
 }
+.form-pedidos {
+	width: 100%;
+	height: 758.8px;
+	padding-top: 24px;
+}
+.form-container {
+	width: 1170px;
+	height: 687px;
+	margin: 0 auto;
+	padding: 40px;
+}
+.row {
+	width: 1090;
+	height: 583px;
+	font-size: 14px;
+	line-height: 1.42;
+	cursor: auto;
+}
+.col-xs-12 {
+	padding: 15px 15px;
+	p {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 30px;
+		margin: 0 0 10px;
+	}
+}
+.separator-color-x {
+	margin-bottom: 6px;
+	padding: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: $border-top-color_1;
+	width: 60px;
+}
+.form-control {
+	display: block;
+	width: 100%;
+	min-height: 44px;
+	padding: 12px 2px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: $color_9;
+	background-color: $background-color_7;
+	background-image: none;
+	border: 0px;
+	border-radius: 0px;
+	border-bottom: 1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgb(0 0 0 / 0%);
+}
+.btn-enviar {
+	background-color: $background-color_2;
+	color: $color_10;
+	padding: 0 55px;
+	line-height: 44px;
+	border-radius: 50px;
+	float: right;
+}
 .contacto-container {
 	height: 183.33px;
 	width: 100%;
 	background-image: url(../img/contacto/contacto-bg.jpg);
 }
 .contacto {
-	color: $color_4;
+	color: $color_5;
 	width: 100%;
 	height: 100%;
 	background-color: $background-color_6;
@@ -597,8 +672,8 @@ span {
 .contacto__title {
 	h2 {
 		font-size: 44px;
-		font-family: $font-family_1;
-		color: $color_4;
+		font-family: $font-family_3;
+		color: $color_5;
 		font-weight: 700;
 		margin-bottom: 10px;
 		display: inline-block;
@@ -610,37 +685,35 @@ span {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 1.75;
-		color: $color_4;
+		color: $color_5;
 		padding: 10px 50px;
 		margin-left: 50px;
 		border-left: solid 3px #437f86;
 	}
 }
 .contacto-container-main {
-	height: 654px;
+	height: 658px;
 	width: 100%;
 	padding: 24px 0px;
-	display: flex;
-	justify-content: center;
 }
 .contacto-box-container {
-	height: 600px;
+	height: 605px;
 	width: 1170px;
-	margin: 0px 38px;
+	margin: 0px auto;
 	padding: 24px 15px;
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 }
 .contacto__box {
-	height: 498px;
+	height: 557px;
 	width: 585px;
 	padding: 0px 15px 24px;
 }
-.input {
+.contacto__box-info {
 	height: 474px;
 	width: 555px;
 	padding: 40px;
-	background-color: $background-color_7;
+	background-color: $background-color_8;
 	p {
 		width: 475px;
 		height: 35px;
@@ -650,30 +723,36 @@ span {
 		padding-bottom: 5px;
 		margin: 0px 0px 10px;
 	}
-	form {
-		height: 308px;
-		width: 475px;
-	}
 }
-.line {
+.input-group {
+	input {
+		border: none;
+		background-color: $background-color_7;
+		width: 100%;
+	}
+	margin-bottom: 15px;
+	font-family: $font-family_1;
+	font-size: 14px;
+	color: $color_5;
+	padding: 12px 2px;
+	background-image: none;
+	border: 0px;
+	border-bottom: solid 1px #ccc;
+}
+textarea {
+	border: none;
+	background-color: $background-color_7;
+	width: 100%;
+}
+.contacto__box-line {
 	margin-bottom: 6px;
 	border-top-width: 4px;
 	border-top-style: solid;
 	border-top-color: $border-top-color_1;
 	width: 60px;
 }
-.input-group {
-	margin-bottom: 15px;
-	font-family: $font-family_1;
-	font-size: 14px;
-	color: $color_4;
-	padding: 12px 2px;
-	background-image: none;
-	border: 0px;
-	border-bottom: solid 1px #ccc;
-}
 .contacto__btn {
-	color: $color_8;
+	color: $color_10;
 	background: #437f86;
 	padding: 0px 55px;
 	border-radius: 50px;
@@ -687,16 +766,17 @@ span {
 .contacto__map {
 	height: 552px;
 	width: 585px;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding: 24px 15px;
 }
-footer {
-	height: 302px;
-	background-repeat: repeat-x;
-	background-color: $background-color_5;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	color: $color_9;
+*/ {
+	footer {
+		height: 302px;
+		background-repeat: repeat-x;
+		background-color: $background-color_5;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		color: $color_11;
+	}
 }
 .footer__container {
 	display: flex;
@@ -746,13 +826,13 @@ footer {
 	height: 28px;
 	font-size: 22px;
 	font-weight: 600;
-	color: $color_9;
+	color: $color_11;
 	margin-bottom: 10px;
 }
 .footer__contacto-info {
 	font-size: 16px;
 	line-height: 26px;
-	color: $color_9;
+	color: $color_11;
 	margin-bottom: 5px;
 }
 .footer__tasar {
@@ -765,13 +845,13 @@ footer {
 	height: 28px;
 	font-size: 22px;
 	font-weight: 600;
-	color: $color_9;
+	color: $color_11;
 	margin-bottom: 10px;
 }
 .footer__tasar-info {
 	font-size: 16px;
 	line-height: 26px;
-	color: $color_9;
+	color: $color_11;
 	margin-bottom: 5px;
 	a {
 		color: $color_2;
@@ -787,9 +867,9 @@ footer {
 	margin-right: auto;
 	margin-left: auto;
 	background-color: $background-color_2;
-	color: $color_4;
+	color: $color_5;
 	font-size: 12px;
-	color: $color_3;
+	color: $color_4;
 }
 .copyright-container {
 	width: 1170px;
@@ -801,11 +881,11 @@ footer {
 }
 .copyright-develop {
 	a {
-		color: $color_10;
+		color: $color_12;
 		text-decoration: none;
 		font-size: 12px;
 		&:hover {
-			color: $color_9;
+			color: $color_11;
 		}
 	}
 }
@@ -855,7 +935,7 @@ footer {
 		p {
 			font-size: 18px;
 			font-weight: 500;
-			color: $color_4;
+			color: $color_5;
 			padding-top: 30px;
 			padding-bottom: 20px;
 			margin-bottom: 0px;
@@ -916,6 +996,45 @@ footer {
 	}
 	.cards-prop {
 		width: 970px;
+	}
+	.mid {
+		width: 970px;
+		height: 520px;
+	}
+	.form-container {
+		width: 970px;
+	}
+	.img-container {
+		width: 455px;
+		height: 389px;
+	}
+	.box-info {
+		width: 455px;
+		height: 495px;
+		p {
+			width: 375px;
+			height: 285px;
+		}
+	}
+	.contacto-box-container {
+		width: 970px;
+		margin: 0 auto;
+	}
+	.contacto__box {
+		width: 485px;
+		height: 557px;
+	}
+	.contacto__box-info {
+		width: 100%;
+		height: 100%;
+	}
+	.contacto__map {
+		width: 485px;
+		height: 550px;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
 	}
 	.footer__container {
 		margin: 0 auto;
@@ -1040,6 +1159,39 @@ footer {
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(8, 1fr);
 	}
+	.mid-container {
+		height: auto;
+	}
+	.img-container {
+		display: none;
+	}
+	.mid {
+		width: 750px;
+		height: 424px;
+	}
+	.box-info {
+		width: 720px;
+		height: 400px;
+		p {
+			width: 640px;
+			height: 190px;
+		}
+	}
+	.form-container {
+		width: 750px;
+		height: 805px;
+	}
+	.contacto-box-container {
+		width: 750px;
+	}
+	.contacto__box {
+		width: 375px;
+		height: 557px;
+	}
+	.contacto__map {
+		width: 375px;
+		height: 552px;
+	}
 	footer {
 		height: auto;
 		padding-top: 70px;
@@ -1088,7 +1240,7 @@ footer {
 		border-color: $border-color_1;
 		&:hover {
 			background: #437f86;
-			color: $color_6;
+			color: $color_7;
 		}
 	}
 	.navegacion {
@@ -1106,7 +1258,7 @@ footer {
 			text-transform: uppercase;
 			&:hover {
 				background-color: $background-color_2;
-				color: $color_6;
+				color: $color_7;
 			}
 		}
 	}
@@ -1266,9 +1418,31 @@ footer {
 			height: auto;
 		}
 	}
+	.form-container {
+		width: auto;
+		height: auto;
+	}
+	.contacto-container-main {
+		height: auto;
+	}
+	.contacto-box-container {
+		width: auto;
+		height: 1157px;
+		display: flex;
+		flex-direction: column;
+	}
+	.contacto__box {
+		width: auto;
+		height: auto;
+	}
+	.contacto__map {
+		width: auto;
+		height: 100%;
+	}
 	footer {
 		height: auto;
 		width: 100%;
+		padding-top: -50px;
 	}
 	.footer__container {
 		width: auto;
