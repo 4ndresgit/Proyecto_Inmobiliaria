@@ -8,7 +8,6 @@
   &-container {
     width: auto;
     height: 92px;
-    margin: 0 15px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -16,16 +15,30 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: work sans, sans-serif;
-    color: #ffffff;
+    font-family: $font-family_1;
+    color: $color_3;
   }
   &-title {
     font-size: 24px;
-    color: #ffffff;
+    color: $color_3;
   }
+  &-form{
+    color: $color_3;
+    border-radius: 50px;
+    border: solid 1px $color_3;
+    background-color: $color_2;
+    cursor: pointer;
+    width: 260px;
+    height: 40px;
+  }
+  input::placeholder {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+    }
   &-btn {
-    color: $color_1;
-    background-color: #383838;
+    color: $color_3;
+    background-color: $color_5;
     transition: 0.5s;
     height: 40px;
     width: 160px;
@@ -40,5 +53,5 @@
     &:hover {
       background-color: black;
     }
-  }
+  }  
 }

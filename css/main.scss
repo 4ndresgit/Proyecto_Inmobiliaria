@@ -1,5 +1,6 @@
 /* Variables */
 @import '../scss/utilities/color.scss';
+@import '../scss/utilities/maps';
 
 /* Reset de css */
 @import '../scss/normalize/reset.scss';
@@ -13,8 +14,6 @@
 /* Layout */
 @import '../scss/layout/navbar';
 @import '../scss/layout/navsearch';
-@import '../scss/layout/grid.scss';
-@import '../scss/layout/flex.scss';
 @import '../scss/layout/header.scss';
 @import '../scss/layout/section.scss';
 @import '../scss/layout/footer';
@@ -23,3 +22,4 @@
 @import '../scss/views/mediaqueries/escritorioChico';
 @import '../scss/views/mediaqueries/tablet';
 @import '../scss/views/mediaqueries/mobil';
+

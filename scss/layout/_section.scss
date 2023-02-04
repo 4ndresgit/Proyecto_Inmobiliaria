@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.box-container {
+.box__container {
   margin: 0 auto;
   width: 1170px;
   height: 504px;
@@ -68,7 +68,7 @@ span {
 .descripcion__box {
   width: 555px;
   height: 902.21px;
-  padding: 70px 40px 20px;
+  padding: 40px 40px 20px;
   background-color: $color_2;
   box-shadow: 6px 6px 25px 0 rgb(0 0 0 / 39%);
   h2 {

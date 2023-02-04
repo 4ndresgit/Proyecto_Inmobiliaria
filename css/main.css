@@ -1,4 +1,16 @@
 /* Variables */
+.social li a:hoverfacebook {
+  color: #3b5998;
+}
+
+.social li a:hoverinstagram {
+  color: #e95950;
+}
+
+.social li a:hoverwhatsapp {
+  color: #075E54;
+}
+
 /* Reset de css */
 * {
   margin: 0;
@@ -515,7 +527,6 @@ img {
 .search-container {
   width: auto;
   height: 92px;
-  margin: 0 15px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -524,14 +535,38 @@ img {
   align-items: center;
   justify-content: space-evenly;
   font-family: work sans, sans-serif;
-  color: #ffffff;
+  color: #f8f8f8;
 }
 .search-title {
   font-size: 24px;
-  color: #ffffff;
+  color: #f8f8f8;
+}
+.search-form {
+  color: #f8f8f8;
+  border-radius: 50px;
+  border: solid 1px #f8f8f8;
+  background-color: #437f86;
+  cursor: pointer;
+  width: 260px;
+  height: 40px;
+}
+.search input::-moz-placeholder {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.search input:-ms-input-placeholder {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.search input::placeholder {
+  color: white;
+  font-size: 14px;
+  text-align: center;
 }
 .search-btn {
-  color: #212121;
+  color: #f8f8f8;
   background-color: #383838;
   transition: 0.5s;
   height: 40px;
@@ -567,7 +602,7 @@ header {
   background-size: cover;
 }
 
-.box-container {
+.box__container {
   margin: 0 auto;
   width: 1170px;
   height: 504px;
@@ -633,7 +668,7 @@ span {
 .descripcion__box {
   width: 555px;
   height: 902.21px;
-  padding: 70px 40px 20px;
+  padding: 40px 40px 20px;
   background-color: #437f86;
   box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, 0.39);
 }
@@ -925,6 +960,9 @@ textarea {
   color: #212121;
   margin-bottom: 5px;
 }
+.footer__tasar-info p {
+  margin-top: 15px;
+}
 .footer__tasar-info a {
   color: #437f86;
   font-weight: 600;
@@ -1037,8 +1075,9 @@ textarea {
     height: 551.88px;
     padding: 24px 0;
   }
-  .box-container {
+  .box__container {
     width: 970px;
+    margin-left: 50px;
   }
   .superior-nosotros {
     height: 247px;
@@ -1194,6 +1233,7 @@ textarea {
     width: 720px;
     height: 337px;
     margin-top: 30px;
+    margin-left: 70px;
     padding: 70px 40px 20px;
   }
   .superior-nosotros {
