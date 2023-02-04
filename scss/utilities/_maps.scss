@@ -1,14 +1,2 @@
 
 
-$redesHover: (
-    facebook: #3b5998,
-    instagram: #e95950,
-    whatsapp: #075E54
-);
-
-@each $blue, $color in $redesHover {
-
-    .social li a:hover#{$blue} {
-        color: $color;
-    }
-}

@@ -1,3 +1,7 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
 
 @media screen and (max-width: 1199px) {
   .navbar-container {
@@ -32,8 +36,7 @@
     margin-left: 0;
   }
   .card {
-    width: 240px;
-    height: 390px;
+    @include size(240px, 390px);
     display: flex;
     span {
       margin-top: 12px;
@@ -59,8 +62,7 @@
     }
   }
   .card__image {
-    width: 220px;
-    height: 190px;
+    @include size(220px, 190px);
     align-items: center;
     justify-content: center;
   }
@@ -90,8 +92,7 @@
     margin-bottom: 40px;
   }
   .descripcion {
-    width: 970px;
-    height: 1052px;
+    @include size(970px, 1052px);
   }
   .descripcion__box {
     width: 485px;
@@ -109,22 +110,18 @@
     width: 970px;
   }
   .mid {
-    width: 970px;
-    height: 520px;
+    @include size(970px, 520px);
   }
   .form-container {
     width: 970px;
   }
   .img-container {
-    width: 455px;
-    height: 389px;
+    @include size(455px, 389px);
   }
   .box-info {
-    width: 455px;
-    height: 495px;
+    @include size(455px, 495px);
     p {
-      width: 375px;
-      height: 285px;
+    @include size(375px, 285px);
     }
   }
   .contacto-box-container {
@@ -132,16 +129,14 @@
     margin: 0 auto;
   }
   .contacto__box {
-    width: 485px;
-    height: 557px;
+    @include size(485px, 557px);
   }
   .contacto__box-info {
     width: 100%;
     height: 100%;
   }
   .contacto__map {
-    width: 485px;
-    height: 550px;
+    @include size(385px, 550px);
     iframe {
       width: 100%;
       height: 100%;
@@ -149,21 +144,18 @@
   }
   .footer__container {
     margin: 0 auto;
-    width: 970px;
-    height: 225px;
+    @include size(970px, 225px);
     padding: 0px 15px;
   }
   .footer__logo {
     margin-top: 30px;
   }
   .footer__tasar {
-    height: 216px;
-    width: 323.32px;
+    @include size(323px, 216px);
     padding: 0 -15px;
   }
   .footer__contacto {
-    height: 224.96px;
-    width: 323.32px;
+    @include size(323px, 225px);
     padding: 0 15px;
   }
   .footer__tasar-info {
