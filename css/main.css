@@ -203,7 +203,7 @@ body {
 .card {
   height: 390px;
   width: 280px;
-  background-color: #e2e2e2;
+  background-color: #e8e8e8;
   border: solid 1px #f2f2f2;
   padding: 10px;
   margin: 5px;
@@ -229,7 +229,7 @@ body {
   width: 280px;
   font-size: 20px;
   font-weight: 500;
-  color: #383838;
+  color: #212121;
   padding-top: 30px;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -745,7 +745,8 @@ span {
 }
 .box-info p a {
   text-decoration: none;
-  color: #aaaddd;
+  color: #f8f8f8;
+  font-weight: bold;
 }
 
 .img-container {

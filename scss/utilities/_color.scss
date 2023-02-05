@@ -1,12 +1,12 @@
-$color_1: #212121;
-$color_2: #437f86;
-$color_3: #f8f8f8;
-$color_5: #383838;
-$color_6: #808080;
-$color_8: #aaaddd;
-$color_9: #555;
-$font-family_1: work sans, sans-serif;
-$background-color_5: #e2e2e2;
+@import '../utilities/maps';
+
+$color_1: map-get($colors, fontPrimary);
+$color_2: map-get($colors, primary);
+$color_3: map-get($colors, secondary);
+$color_5: map-get($colors, fontSecondary);
+$color_6: map-get($color, fontCardSecondary);
+$background-color_5: map-get($colors, backgroundPrimary);
 $background-color_6: rgba(255, 255, 255, 0.592);
 $background-color_7: transparent;
+$font-family_1: work sans, sans-serif;
 
