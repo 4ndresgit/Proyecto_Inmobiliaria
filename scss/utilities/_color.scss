@@ -4,7 +4,7 @@ $color_1: map-get($colors, fontPrimary);
 $color_2: map-get($colors, primary);
 $color_3: map-get($colors, secondary);
 $color_5: map-get($colors, fontSecondary);
-$color_6: map-get($color, fontCardSecondary);
+$color_6: map-get($colors, fontCardSecondary);
 $background-color_5: map-get($colors, backgroundPrimary);
 $background-color_6: rgba(255, 255, 255, 0.592);
 $background-color_7: transparent;

@@ -1,13 +1,17 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 @media screen and (max-width: 767px) {
   header {
-    width: 100%;
-    height: 60px;
+    @include size(100%, 60px);
   }
   .responsive-navbar {
     display: block;
   }
   .btn-success {
-    --bs-btn-bg: #437f86;
+    --bs-btn-bg: $color_2;
   }
   .btn {
     font-size: 0.75rem;
@@ -15,7 +19,7 @@
     background: #fff;
     border-color: $color_3;
     &:hover {
-      background: #437f86;
+      background: $color_2;
       color: $color_3;
     }
   }
@@ -33,7 +37,7 @@
       text-decoration: none;
       text-transform: uppercase;
       &:hover {
-        background-color: color_2;
+        background-color: $color_2;
         color: $color_3;
       }
     }
@@ -43,8 +47,7 @@
     justify-content: center;
     img {
       border-radius: 50%;
-      width: 250px;
-      height: 150px;
+      @include size(250px, 150px);
     }
   }
   .acomodar {
@@ -58,8 +61,7 @@
     a {
       width: 84px;
       img {
-        width: 84px;
-        height: 50px;
+        @include size(84px, 50px);
         margin: 0 auto;
       }
     }
@@ -70,16 +72,16 @@
   .search {
     display: none;
   }
+
+  /* Home */
   .propiedades {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
     padding: 20px 0px 30px;
     margin-left: auto;
     margin-right: auto;
   }
   .cards {
-    height: auto;
-    width: 100%;
+    @include size(100%, auto);
     margin: 0 15px;
     display: grid;
     grid-template-columns: 1fr;
@@ -87,8 +89,7 @@
     grid-column-gap: 15px;
   }
   .card {
-    width: 380px;
-    height: 460px;
+    @include size(380px, 460px);
     overflow: hidden;
     position: relative;
     min-height: 1px;
@@ -96,8 +97,7 @@
     padding: 14px 14px 0px;
   }
   .card__image {
-    height: 285px;
-    width: 385px;
+    @include size(385px, 285px);
     margin: -14px;
     margin-bottom: 14px;
     img {
@@ -105,22 +105,20 @@
     }
   }
   .box-container {
-    width: auto;
-    height: auto;
+    @include size(auto, auto);
     padding: 15px 15px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
   }
   .box__content {
-    width: auto;
-    height: auto;
+    @include size(auto, auto);
     margin: 0;
     padding: 15px 10px;
   }
   .box__title {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
+
     font-size: 32px;
     line-height: 1.44;
     margin-top: 0px;
@@ -128,24 +126,36 @@
     padding-bottom: 15px;
   }
   .box__text {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
+
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.56;
     font-stretch: normal;
   }
+  /* Sobre nosotros */
   .superior-nosotros {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
   }
   .nosotros {
-    height: auto;
     padding: 25px 15px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex-direction: column;
+    &__title {
+      @include size(100%, 96px);
+      padding: 20px 15px;
+      h2 {
+        font-size: 32px;
+      }
+    }
+    &__text {
+      @include size(100%, 55px);
+      p {
+        @include size(100%, 55px);
+        margin: 0 0 10px 30px;
+      }
+    }
   }
   .inferior-nosotros {
     width: 100%;
@@ -153,76 +163,140 @@
     margin-bottom: 10px;
   }
   .descripcion {
-    width: 100%;
-    height: auto;
     margin: 0 auto;
+    height: auto;
+
+    &__box-container {
+      width: auto;
+      height: auto;
+      padding: 0 20px;
+    }
+    &__box {
+      width: auto;
+      height: auto;
+      p {
+        font-size: 16px;
+      }
+      div {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  /* Propiedades */
+
+  .superior-propiedades {
+    @include size(100%, auto);
+  }
+  .propiedades-section {
+    padding: 25px 15px;
     display: flex;
     flex-direction: column;
   }
-  .descripcion__box-container {
-    width: 100%;
-    height: auto;
-    padding: 0px 15px 20px;
-    margin: 0 auto;
-  }
-  .descripcion__box {
-    width: 100%;
-    height: auto;
-    padding: 30px 15px;
+  .propiedades__titulo {
+    @include size(100%, 96px);
     h2 {
       font-size: 32px;
-      line-height: 1.44;
-      font-weight: 600;
-    }
-    span {
-      font-size: 24px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.56;
-      padding-bottom: 0px;
     }
   }
-  .descripcion__img {
-    display: block;
-    height: auto;
-    width: auto;
-    padding: 0 15px;
-    margin-top: 24px;
-    margin-bottom: 20px;
-    img {
-      height: auto;
+  .propiedades__text {
+    @include size(100%, 55px);
+    p {
+      @include size(100%, 55px);
     }
+  }
+  .cards-prop {
+    width: 380px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    & .card__image img {
+      width: 380px;
+      height: 260px;
+    }
+        & .card__price{
+      padding: 5px;
+    }
+  }
+
+  /* Pedidos */
+
+  .pedidos {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      @include size(100%, 96px);
+      padding: 20px 15px;
+      h2 {
+        font-size: 32px;
+      }
+    }
+    &__text {
+      @include size(100%, 55px);
+      p {
+        @include size(100%, 55px);
+        margin: 0 0 10px 10px;
+        padding-left: 15px;
+      }
+    }
+  }
+  .mid {
+    @include size(auto, auto);
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-info {
+    @include size(100%, 100%);
+    p {
+      @include size(100%, auto);
+    }
+  }
+  .box-mail {
+    @include size(100%, 100%);
+    margin: 0 15px;
+  }
+  .form-pedidos {
+    @include size(100%, 1060px);
+    padding-bottom: 20px;
   }
   .form-container {
-    width: auto;
-    height: auto;
+    @include size(auto, 100%);
+    padding-top: 20px;
   }
+  .btn-enviar {
+    background-color: $color_2;
+    color: $color_3;
+    padding: 0 55px;
+    line-height: 44px;
+    border-radius: 50px;
+    float: right;
+    &:hover {
+      background-color: $color_1;
+      color: $color_3;
+    }
+  }
+  /* Contacto */
   .contacto-container-main {
     height: auto;
   }
   .contacto-box-container {
-    width: auto;
-    height: 1157px;
+    @include size(auto, 1160px);
+
     display: flex;
     flex-direction: column;
   }
   .contacto__box {
-    width: auto;
-    height: auto;
+    @include size(auto, auto);
   }
   .contacto__map {
-    width: auto;
-    height: 100%;
+    @include size(100%, auto);
   }
   footer {
-    height: auto;
-    width: 100%;
+    @include size(100%, auto);
     padding-top: -50px;
   }
   .footer__container {
-    width: auto;
-    height: auto;
+    @include size(auto, auto);
     padding: 0;
     margin: 0 auto;
     display: flex;
@@ -230,20 +304,20 @@
     justify-content: flex-start;
   }
   .footer__logo {
-    width: 100%;
-    height: 149px;
+    @include size(100%, 149px);
+
     padding: 10px 15px;
     margin-bottom: 10px;
   }
   .footer__contacto {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
+
     padding: 0 15px;
     margin-bottom: 25px;
   }
   .footer__tasar {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
+
     margin-left: 0;
     padding: 0 15px;
   }
@@ -257,8 +331,8 @@
     height: 113px;
   }
   .copyright-container {
-    width: 100%;
-    height: 113px;
+    @include size(100%, 113px);
+
     padding: 0;
     margin: 0;
     display: flex;
