@@ -1756,7 +1756,7 @@ textarea {
   }
   .contacto__map {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   footer {
     width: 100%;
