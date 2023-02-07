@@ -1521,12 +1521,12 @@ textarea {
     display: none;
   }
   .section-slider {
-    height: 600px;
+    height: 500px;
     width: 100%;
   }
   .section-slider img {
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
   /* Home */
   .propiedades {
