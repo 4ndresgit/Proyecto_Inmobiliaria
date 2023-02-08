@@ -545,11 +545,6 @@ img {
   font-size: 14px;
   text-align: center;
 }
-.search input:-ms-input-placeholder {
-  color: white;
-  font-size: 14px;
-  text-align: center;
-}
 .search input::placeholder {
   color: white;
   font-size: 14px;
@@ -1521,12 +1516,12 @@ textarea {
     display: none;
   }
   .section-slider {
-    height: 500px;
+    height: 400px;
     width: 100%;
   }
   .section-slider img {
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
   /* Home */
   .propiedades {
