@@ -102,9 +102,6 @@
       justify-content: space-between;
       padding-bottom: 10px;
       padding-top: 50px;
-      a{
-        width: 150px;
-      }
     }
     & .card__price {
       padding: 5px;
@@ -113,7 +110,7 @@
       font-size: 20px;
     }
     & .card__text a{
-      width: 100px;
+      width: 150px;
     }
     .card__btn {
       width: 100%;
@@ -232,6 +229,7 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 15px;
+      padding-top: 50px;
     }
     & .card__price {
       padding: 5px;
@@ -239,7 +237,7 @@
       font-weight: bold;
     }
     & .card__text a{
-      width: 100px;
+      width: 150px;
     }
     .prop__btn {
       width: 100%;
