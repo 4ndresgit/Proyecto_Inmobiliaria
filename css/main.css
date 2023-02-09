@@ -1534,15 +1534,16 @@ textarea {
   .cards {
     width: 100%;
     height: auto;
-    margin: 0 15px;
+    padding: 15px 15px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 15px;
   }
   .card {
-    width: 380px;
-    height: 460px;
+    width: auto;
+    height: auto;
     overflow: hidden;
     position: relative;
     min-height: 1px;
@@ -1552,8 +1553,8 @@ textarea {
   .card__image {
     width: 385px;
     height: 285px;
-    margin: -14px;
-    margin-bottom: 14px;
+    margin-bottom: 5px;
+    width: auto;
   }
   .card__image img {
     width: 100%;
