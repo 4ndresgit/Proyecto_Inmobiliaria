@@ -83,35 +83,41 @@
 
   /* Home */
   .propiedades {
-    @include size(100%, auto);
+    @include size(auto, auto);
     padding: 20px 0px 30px;
     margin-left: auto;
     margin-right: auto;
   }
+  
   .cards {
-    @include size(100%, auto);
-    padding: 15px 15px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 15px;
-  }
-  .card {
     @include size(auto, auto);
-    overflow: hidden;
-    position: relative;
-    min-height: 1px;
-    margin: 0 auto 20px;
-    padding: 14px 14px 0px;
 
-   &__image {
-      @include size(385px, 285px);
-      margin-bottom: 5px;
-      width: auto;
-      img {
-        width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    & .card__image {
+    @include size(100%, 260px);
+    }
+    & .card__text div {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      padding-top: 50px;
+      a{
+        width: 150px;
       }
+    }
+    & .card__price {
+      padding: 5px;
+      width: 150px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    & .card__text a{
+      width: 100px;
+    }
+    .card__btn {
+      width: 100%;
+      margin-top: 10px;
     }
   }
   .box__container {
@@ -127,7 +133,7 @@
     padding: 15px 10px;
   }
   .box__title {
-    @include size(574px, auto);
+    @include size(100%, auto);
 
     font-size: 32px;
     line-height: 1.44;
@@ -146,23 +152,23 @@
   }
   /* Sobre nosotros */
   .superior-nosotros {
-    @include size(100%, auto);
+    @include size(100%, 300px);
   }
   .nosotros {
     padding: 25px 15px;
     display: flex;
     flex-direction: column;
     &__title {
-      @include size(100%, 96px);
+      @include size(100%, 80px);
       padding: 20px 15px;
       h2 {
         font-size: 32px;
       }
     }
     &__text {
-      @include size(100%, 55px);
+      @include size(100%, 70px);
       p {
-        @include size(100%, 55px);
+        @include size(100%, 70px);
         margin: 0 0 10px 30px;
       }
     }
@@ -195,55 +201,89 @@
   /* Propiedades */
 
   .superior-propiedades {
-    @include size(100%, auto);
+    @include size(100%, 300px);
   }
   .propiedades-section {
-    padding: 25px 15px;
+    padding: 15px 15px;
     display: flex;
     flex-direction: column;
   }
   .propiedades__titulo {
-    @include size(100%, 96px);
+    @include size(100%, 80px);
     h2 {
       font-size: 32px;
     }
   }
   .propiedades__text {
-    @include size(100%, 55px);
+    @include size(100%, 70px);
     p {
-      @include size(100%, 55px);
+      @include size(100%, 70px);
     }
   }
   .cards-prop {
     width: 380px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    & .card__image img {
-      width: 380px;
+    & .card__image {
+      width: 100%;
       height: 260px;
+    }
+    & .card__text div {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
     }
     & .card__price {
       padding: 5px;
+      width: 150px;
+      font-weight: bold;
+    }
+    & .card__text a{
+      width: 100px;
+    }
+    .prop__btn {
+      width: 100%;
     }
   }
 
   /* Pedidos */
-
+  .pedidos-containes {
+    @include size(100%, 300px);
+  }
   .pedidos {
     padding: 25px 15px;
     display: flex;
     flex-direction: column;
     &__title {
-      @include size(100%, 96px);
+      @include size(100%, 80px);
       padding: 20px 15px;
       h2 {
         font-size: 32px;
       }
     }
     &__text {
-      @include size(100%, 55px);
+      @include size(100%, 70px);
       p {
-        @include size(100%, 55px);
+        @include size(100%, 70px);
+        margin: 0 0 10px 30px;
+      }
+    }
+  }
+  .pedidos {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      @include size(100%, 80px);
+      padding: 20px 15px;
+      h2 {
+        font-size: 32px;
+      }
+    }
+    &__text {
+      @include size(100%, 70px);
+      p {
+        @include size(100%, 70px);
         margin: 0 0 10px 10px;
         padding-left: 15px;
       }
@@ -286,6 +326,29 @@
     }
   }
   /* Contacto */
+
+  .contacto-container {
+    @include size(100%, 300px);
+  }
+  .contacto {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      @include size(100%, 96px);
+      padding: 20px 15px;
+      h2 {
+        font-size: 32px;
+      }
+    }
+    &__text {
+      @include size(100%, 55px);
+      p {
+        @include size(100%, 55px);
+        margin: 0 0 10px 30px;
+      }
+    }
+  }
   .contacto-container-main {
     height: auto;
   }

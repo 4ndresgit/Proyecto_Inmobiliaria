@@ -35,43 +35,36 @@
     margin-left: 0;
   }
   .card {
-    @include size(240px, 390px);
+    width: 240px;
+    height: 390px;
     display: flex;
-    span {
-      margin-top: 12px;
-      margin-bottom: 10px;
+    &__image {
+      width: 100%;
+      height: 350px;
     }
-    h2 {
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 18px;
-      font-weight: 500;
-      color: $color_5;
-      padding-top: 30px;
-      padding-bottom: 20px;
-      margin-bottom: 0px;
-      line-height: 40px;
-    }
-    button {
-      margin-top: 15px;
-      margin-right: 0px;
-      padding: 5px 5px;
-      font-size: 14px;
-    }
-  }
-  .card__image {
-    @include size(220px, 190px);
-    align-items: center;
-    justify-content: center;
-  }
-  .card__text {
-    ul {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
+    &__text div {
+      height: 50px;
+      padding-top: 20px;
+      p {
+        font-size: 16px;
+        margin-bottom: 0;
+        width: 150px;
+        height: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-weight: bold;
+      }
+      a {
+        width: 100px;
+      }
+      & .card__btn {
+        width: 100%;
+        margin-top: 0;
+
+      }
     }
   }
+  
   .presentacion-container {
     height: 551.88px;
     padding: 24px 0;
