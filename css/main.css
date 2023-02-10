@@ -1711,13 +1711,13 @@ textarea {
   }
   .cards-prop .card__text div {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
     padding-top: 50px;
   }
   .cards-prop .card__price {
     padding: 5px;
-    width: 150px;
+    width: 250px;
     font-weight: bold;
   }
   .cards-prop .card__text a {

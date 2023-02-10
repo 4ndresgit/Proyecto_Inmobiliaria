@@ -227,13 +227,13 @@
     }
     & .card__text div {
       display: flex;
-      justify-content: space-between;
-      padding-bottom: 15px;
+      justify-content: space-evenly;
+      padding-bottom: 10px;
       padding-top: 50px;
     }
     & .card__price {
       padding: 5px;
-      width: 150px;
+      width: 250px;
       font-weight: bold;
     }
     & .card__text a{
