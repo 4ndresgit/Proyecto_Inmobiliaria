@@ -91,11 +91,12 @@
   .descripcion {
     @include size(970px, 1052px);
   }
+  
   .descripcion__box {
-    width: 485px;
-    height: 1052px;
+    @include size(485px, 1052px);
   }
   .descripcion__img {
+    
     width: 455px;
     height: 560px;
     img {
@@ -162,6 +163,9 @@
   }
   .footer__logo {
     margin-top: 30px;
+    ul {
+      padding-left: 0;
+    }
   }
   .footer__tasar {
     @include size(323px, 216px);

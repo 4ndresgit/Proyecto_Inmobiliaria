@@ -1170,6 +1170,9 @@ textarea {
   .footer__logo {
     margin-top: 30px;
   }
+  .footer__logo ul {
+    padding-left: 0;
+  }
   .footer__tasar {
     width: 323px;
     height: 216px;
@@ -1221,13 +1224,12 @@ textarea {
     width: auto;
   }
   .cards {
-    height: 1900px;
-    width: 100%;
+    width: 720px;
+    height: 1990px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 0;
-    align-items: center;
     justify-items: center;
   }
   .card {
@@ -1257,18 +1259,17 @@ textarea {
   .card__text div .card__btn {
     width: 100%;
   }
-  .box-container {
+  .box__container {
     width: 750px;
     height: 409px;
     margin: 0 auto;
-    padding: 24px 15px;
+    padding: 24px 0;
     overflow: hidden;
   }
   .box__content {
     width: 720px;
     height: 337px;
-    margin-top: 30px;
-    margin-left: 70px;
+    margin: 70px auto;
     padding: 70px 40px 20px;
   }
   /* Sobre nosotros */
@@ -1548,8 +1549,8 @@ textarea {
     display: none;
   }
   .section-slider {
-    height: 400px;
     width: 100%;
+    height: 400px;
   }
   .section-slider img {
     width: 100%;

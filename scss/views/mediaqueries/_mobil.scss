@@ -73,11 +73,9 @@
     display: none;
   }
   .section-slider {
-    height: 400px;
-    width: 100%;
+    @include size(100%, 400px);
     img {
-      width: 100%;
-      height: 400px;
+      @include size(100%, 400px);
     }
   }
 
@@ -140,7 +138,6 @@
   }
   .box__text {
     @include size(100%, auto);
-
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 16px;
@@ -171,8 +168,7 @@
     }
   }
   .inferior-nosotros {
-    width: 100%;
-    height: auto;
+    @include size(100%, auto);
     margin-bottom: 10px;
   }
   .descripcion {
@@ -180,13 +176,11 @@
     height: auto;
 
     &__box-container {
-      width: auto;
-      height: auto;
+      @include size(auto, auto);
       padding: 0 20px;
     }
     &__box {
-      width: auto;
-      height: auto;
+      @include size(auto, auto);
       p {
         font-size: 16px;
       }
