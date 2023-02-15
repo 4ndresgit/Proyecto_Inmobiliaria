@@ -912,6 +912,7 @@ textarea {
 .footer__social {
   margin-top: 10px;
   display: flex;
+  padding-left: 0;
 }
 .footer__social li a {
   padding: 15px 15px;
