@@ -1,0 +1,122 @@
+footer {
+    height: auto;
+    background-repeat: repeat-x;
+    background-color: #e2e2e2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #212121;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer__logo {
+    height: auto;
+    width: 292.5px;
+    padding: 5px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__logo img {
+    max-width: 100%;
+  }
+  .footer__logo ul {
+    list-style-type: none;
+  }
+  
+  .footer__social {
+    margin-top: 10px;
+    display: flex;
+    padding-left: 0;
+  }
+  .footer__social li a {
+    padding: 15px;
+    color: #437f86;
+    opacity: 0.4;
+  }
+  .footer__social li a:hover {
+    opacity: 1;
+  }
+  
+  .footer__contacto {
+    width: 487.5px;
+    padding: 0 15px;
+  }
+  
+  .footer__contacto-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  
+  .footer__contacto-info {
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121;
+    margin-bottom: 5px;
+  }
+  
+  .footer__tasar {
+    width: 390px;
+    padding: 0 15px;
+  }
+  
+  .footer__tasar-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  
+  .footer__tasar-info {
+    font-size: 16px;
+    line-height: 26px;
+    color: #212121;
+    margin-bottom: 5px;
+  }
+  .footer__tasar-info p {
+    margin-top: 15px;
+  }
+  .footer__tasar-info a {
+    color: #437f86;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .copyright {
+    height: auto;
+    width: 100%;
+    padding: 25px 15px;
+    background-color: #437f86;
+    color: #f8f8f8;
+    font-size: 12px;
+  }
+  
+  .copyright-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .copyright-develop a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .copyright-develop a:hover {
+    color: #212121;
+  }
+  
