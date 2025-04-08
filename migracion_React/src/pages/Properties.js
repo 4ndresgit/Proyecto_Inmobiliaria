@@ -1,5 +1,5 @@
 import React from "react";
-import PropertyCard from "../components/PropertyCard";
+import PropertyCard from "../Components/PropertyCard";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 
